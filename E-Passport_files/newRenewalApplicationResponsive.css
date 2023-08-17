@@ -1,0 +1,304 @@
+input[type="submit"]{
+	margin-top:30px
+}
+.ui-widget-header:not(.ui-fileupload-buttonbar) {
+    background-color: #d6e3eb !important;
+    color: #000 !important;
+    font-weight: normal;
+}
+.table .ui-datatable-tablewrapper table thead th {
+	font-size: 12px;
+}
+
+.ui-datatable table {
+	font-size: 12px;
+}
+
+.ui-selectonemenu {
+	margin-bottom: 0px !important;
+}
+
+.increase-top-margin {
+ 	
+ }
+ 
+.increase-width {
+	
+}
+.ipad-768widthscreen{
+		
+	}
+ .col-tab {
+	width: 20%;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+ }
+
+ @media ( max-width : 991px) {
+	.col-tab {
+		width: 100% !important;
+	}
+ }
+ .col-tab:LAST-CHILD {
+	clear: right;
+}
+
+@media (min-width: 1880px)
+.col-md-3 {
+    width: 25%;
+    margin-left: -25px;
+}
+@media ( max-width : 1920px) {
+	.ipad-768widthscreen{
+		margin-left:-25px;
+	}
+ }
+ 
+ .col-tab:LAST-CHILD {
+	clear: right;
+} 
+
+.ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary, .ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary {
+    margin-right: 0px !important;
+    visibility: hidden;
+    text-align: left;
+    display:none;
+    
+}
+.eidErrorMsg .ui-messages-error {
+	font-size: 12px;
+}
+.ui-messages-fatal-icon {
+    display: none;
+}
+.ui-messages-fatal .ui-messages-fatal-detail {
+    text-transform: inherit;
+    line-height: 26px;
+    margin-left: 0px !important;
+}
+
+@media screen and (min-width: 411px) and (max-width:414px){
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small .x-btn-inner {
+    width: 178px !important;
+    line-height: 40px;
+    font-size: 11px;  
+	}
+	.isbaa-fwa-image-text-heading {
+    font-size: 11px !important;
+    line-height: 2 !important;
+    }
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small {
+    width: 170px !important;
+	}
+    .col-tab {
+    width: 100% !important;
+    float: center;
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+	.label {
+    font-size: 13px !important;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: small;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ .adjust-alignment {
+ 	margin-left:-23px;
+ }
+ .hide-column {
+ 	display:none;
+ }
+ .position-center {
+ 	text-align:center;
+ }
+ .increase-top-margin {
+ 	margin-top:-20px;
+ }
+ .increase-width {
+	width:260px;
+	margin-right:-25px;
+}
+span.ui-messages-info-detail {
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 0px;
+    line-height: 26px;
+}
+.ipad-768widthscreen{
+		margin-left:0px;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width:375px){
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small .x-btn-inner {
+    width: 160px !important;
+    line-height: 40px;
+    font-size: 10px;  
+	}
+	.isbaa-fwa-image-text-heading {
+    font-size: 11px !important;
+    line-height: 2 !important;
+    }
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small {
+    width: 140px !important;
+	}
+    .col-tab {
+    width: 100% !important;
+    float: center;
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+	.label {
+    font-size: 13px !important;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: small;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ .adjust-alignment {
+ 	margin-left:-23px;
+ }
+  .hide-column {
+ 	display:none;
+ }
+ .position-center {
+ 	text-align:center;
+ }
+ .increase-top-margin {
+ 	margin-top:-20px;
+ }
+  .increase-width {
+	width:260px;
+	margin-right:-25px;
+}
+.visible-sm-inline {
+    display: inline !important;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    color: black;
+}
+.element.style {
+    color: #116CAB;
+    text-decoration: underline;
+    display: none;
+}
+span.ui-messages-info-detail {
+    display: inline-block;
+    font-size: 9px;
+    margin-left: 0px;
+    line-height: 26px;
+}
+.ipad-768widthscreen{
+		margin-left:0px;
+	}
+}
+@media screen and (min-width: 280px) and (max-width:320px) {
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small .x-btn-inner {
+    width: 160px !important;
+    line-height: 40px;
+    font-size: 08px;
+	}
+	.isbaa-fwa-image-text-heading {
+    font-size: 11px !important;
+    line-height: 2 !important;
+    }
+	.isbaa-videx-header-btn.x-btn.x-btn-default-small {
+    width: 120px !important;
+	}
+    .col-tab {
+    width: 100% !important;
+    float: center;
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+	.label {
+    font-size: 13px !important;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: small;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ .adjust-alignment {
+ 	margin-left:-23px;
+ }
+ .hide-column {
+ 	display:none;
+ }
+ .position-center {
+ 	text-align:center;
+ }
+ .increase-top-margin {
+ 	margin-top:-20px;
+ }
+  .increase-width {
+	width:260px;
+	margin-right:-25px;
+}
+span.ui-messages-info-detail {
+    display: inline-block;
+    font-size: 7px;
+    margin-left: 0px;
+    line-height: 26px;
+}
+.ipad-768widthscreen{
+		margin-left:0px;
+	}
+.x-panel-body-default.isbaa-videx-subheader-img{
+	height:170px !important;
+}
+}
+
+@media screen and (max-width:540px){
+ .hide-column {
+ 	display:none;
+ }
+ .position-center {
+ 	text-align:center;
+ }
+ .increase-top-margin {
+ 	margin-top:-20px;
+ }
+  .increase-width {
+	width:260px;
+	margin-right:-25px;
+}
+.limit-applicantemail-address {
+			margin-left:05px !important; 
+	}
+}
+@media screen and (max-width:768px){
+	.limit-applicantemail-address {
+			width:344px !important;
+			margin-left:05px !important; 
+	}
+}
+@media screen and (max-width:1024px){
+	.increase-width {
+		margin-left:20px;
+	}
+}
+ 
