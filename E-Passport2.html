@@ -1,155 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>E-Passport</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script type="text/javascript" async="" src="E-Passport_files/js"></script>
   <style>
-    .sticky {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .navbar {
-      background-color: #3a526a;
-      color: white;
-      padding: 6px 0px;
+    .navbar-search {
+      display: flex;
+      align-items: center;
     }
-    .navbar .topbar-item {
-      color: white;
-      text-decoration: none;
-    }
-    .topbar-item:hover
-    {
-        color: blue;
-    }
-    #tabular{
-      font: 14px/18px "Poppins", sans-serif ;
-    }
-    
-    footer#footer {
-        font: 14px/24px "Poppins", sans-serif !important;
-      }
-      @media (max-width: 767px) {
-        footer#footer {
-                color: white;
-                text-align: center;
-                padding: 5px;
-                width: 100%;
-                position: relative;
-                bottom: 0;
-            }
-        }
 
-        @media (min-width: 768px) {
-            footer#footer {
-                color: white;
-                text-align: center;
-                padding: 5px;
-                padding-bottom: 0px;
-                width: 100%;
-                position: relative;
-                bottom: 0;
-            }
-        }
+    .navbar-search input {
+      max-width: 200px;
+    }
 
+    /* Additional CSS for card header and form layout */
+    .card-header {
+      vertical-align: top;
+      background-color: #d6e3eb;
+      height: 50px;
+      padding-top: 5px;
+      cursor: pointer;
+    }
+
+    .card-header .title-detail {
+      font-weight: bold;
+    }
+
+    .card-header .fa-angle-down {
+      font-size: 30px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+    }
   </style>
-  <title>Responsive Navbar</title>
+  <script>
+    function togglePersonalInfo() {
+      const personalInfoFields = document.getElementById("personalInfoFields");
+
+      if (personalInfoFields.style.display === "none") {
+        personalInfoFields.style.display = "block";
+      } else {
+        personalInfoFields.style.display = "none";
+      }
+    }
+  </script>
 </head>
+
 <body>
-  <nav class="navbar" style="font-size: small;">
-    <div class="container d-flex justify-content-between">
-      <div>
-        <i class="fa fa-envelope"></i> mailto:demo@email.com
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid navbar-custom">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+        <a class="navbar-brand" href="#">University Of Health Sciences</a>
       </div>
-      <div>
-        <i class="fa fa-user ct-u-paddingRight5"></i>
-        <a :hover{color:blue} id="stickyTopBar" href="#" class="topbar-item">Logout</a>
+      <div class="navbar-search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <img src="images/user.jpg" alt="User" width="40" height="40" class="rounded-circle">
       </div>
     </div>
   </nav>
-  <div class="container-fluid" style="display: flex;justify-content: center; background-color: #454545; color: white; padding: 8px; width:100% ">
-    <div class="row">
-        You can start your application here.
-    </div>
-</div>
 
-<div id="tabular" class="container sticky-top" style="background-color: white; border: 1px solid black; margin-top: 10px;">
-    <div class="row">
-        <div class="col-md-8 col-sm-6 d-flex align-items-center justify-content-md-start justify-content-center" style="padding: 6px;">
-            <h4 class="mb-0">Renewal Application</h4>
-        </div>
-        <div class="col-md-2 col-sm-3 text-center border-left border-dark d-flex align-items-center justify-content-md-center justify-content-center" style="padding: 6px;">
-            <div class="d-flex flex-column align-items-center">
-                <p class="mb-0 font-weight-bold">Application Fee</p>
-                <p class="mb-0">PKR. 6,000</p>
-            </div>
-        </div>
-        <div class="col-md-2 col-sm-3 text-center border-left border-dark d-flex align-items-center justify-content-md-center justify-content-center" style="padding: 6px;">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <p class="mb-0 font-weight-bold">Tracking ID</p>
-                <p class="mb-0">99992347380</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-  <div class="container">
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
-    <h1>Ali Hamza</h1>
+  <div class="container-fluid"
+    style="display: flex;justify-content: center; background-color: #454545; color: white; padding: 8px; width:100% ">
+    <div class="row">You can start your admission form here.</div>
   </div>
 
-  <footer id="footer" style="background-color: rgb(58, 82, 106);">
-    <div class="container text-center">
+
+  <div class="container">
+
+    <div class="row">&nbsp;</div>
+    <div class="row">
       <div class="row">
-        <div class="col-md-12">
-          <img src="E-Passport_files/powerd_white.png" alt="Powered By" />
-          <p>
-            © 2023 Directorate General of Immigration &amp; Passports
-            VERSION (version: 3.1.1.6)
-          </p>
-          <p class="urdufooter" style="display: none;">version: 3.1.1.6</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Personal Information</div>
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Program & Seats Category</div>
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Qualifications</div>
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Admission Test</div>
+          <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0"
+            aria-valuemax="100">University Preferences</div>
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Upload Documents</div>
+          <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100">Affidavit</div>
         </div>
       </div>
+
+
     </div>
-  </footer>
-  <script>
-    // JavaScript to toggle the sticky class on scroll
-    const tabularDiv = document.getElementById("tabular");
-    const tabularOffsetTop = tabularDiv.offsetTop;
+    <div class="row">&nbsp;</div>
 
-    function toggleSticky() {
-      if (window.pageYOffset >= tabularOffsetTop) {
-        tabularDiv.classList.add("sticky");
-        tabularDiv.classList.remove("container");
-        tabularDiv.classList.add("container-fluid");
-        tabularDiv.style.backgroundColor = "lightgray";
-        tabularDiv.style.paddingLeft = "60px";
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="togglePersonalInfo()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
+              style="padding-top:5px;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Application Details</span>
+          </div>
+          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
+            <i id="collapse1Angle" class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
 
-        tabularDiv.style.border = "none";
-        tabularDiv.style.width = "100%";
-      } else {
-        tabularDiv.classList.remove("sticky");
-        tabularDiv.classList.remove("container-fluid");
-        tabularDiv.classList.add("container");
-        tabularDiv.style.backgroundColor = "white";
-        tabularDiv.style.border = "1px solid black";
-        tabularDiv.style.width = "auto";
-      }
-    }
-    // Attach the scroll event listener
-    window.addEventListener("scroll", toggleSticky);
-  </script>
+      <div class="row mt-3" id="personalInfoFields" style="display: none;">
+        <div class="col-md-12">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="applicantName">Name</label>
+              <input type="text" class="form-control" id="applicantName" placeholder="Name of the Applicant" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="fatherName">Father/Guardian Name</label>
+              <input type="text" class="form-control" id="fatherName" placeholder="Father/Guardian Name" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="motherName">Mother's Name</label>
+              <input type="text" class="form-control" id="motherName" placeholder="Mother's Name" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="cell">Cell #</label>
+              <input type="tel" class="form-control" id="cell" placeholder="Cell" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="tel">Tel #</label>
+              <input type="tel" class="form-control" id="tel" placeholder="Tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mailingAddress">Mailing Address</label>
+            <input type="text" class="form-control" id="mailingAddress" placeholder="Mailing Address (Res.)" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="gender">Choose Gender</label>
+              <select class="form-select" id="gender">
+                <option selected>Choose Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="nationality">Choose Nationality</label>
+          <select class="form-select mb-3" id="nationality">
+            <option selected>Choose Nationality...</option>
+          </select>
+          <label for="dob">DOB</label>
+          <input type="date" class="form-control mb-3" id="dob" placeholder="Date Of Birth" />
+          <label for="domicile">District Of Domicile</label>
+          <input type="text" class="form-control mb-3" id="domicile" placeholder="Domicile" />
+          <label for="areaOfResidence">Area Of Residence</label>
+          <select class="form-select mb-3" id="areaOfResidence">
+            <option selected>Choose Area Of Residence</option>
+            <option value="rural">Rural</option>
+            <option value="urban">Urban</option>
+          </select>
+          <label for="idnum">CNIC/POC/PASSPORT/B-Form</label>
+          <input type="text" class="form-control mb-3" id="cnic" placeholder="CNIC/POC/PASSPORT/B-Form" />
+        </div>
+
+        <div class="col text-end">
+          <a href="program&seats.html">
+            <button type="submit"
+              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+              Save & Continue
+            </button></a>
+        </div>
+      </div>
+
+
+
+
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+
+    <footer style="background-color: #2a2e31; color: white; text-align: center; padding: 10px;">
+      © Copyright 2023 Site Developed and Maintained by IT Department, UHS.
+    </footer>
+
 </body>
+
 </html>
