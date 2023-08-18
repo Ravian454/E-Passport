@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    .sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
     .navbar {
       background-color: #3a526a;
@@ -19,8 +24,10 @@
     {
         color: blue;
     }
-
-    /* styles for footer */
+    #tabular{
+      font: 14px/18px "Poppins", sans-serif ;
+    }
+    
     footer#footer {
         font: 14px/24px "Poppins", sans-serif !important;
       }
@@ -30,7 +37,7 @@
                 text-align: center;
                 padding: 5px;
                 width: 100%;
-                position: absolute;
+                position: relative;
                 bottom: 0;
             }
         }
@@ -42,25 +49,23 @@
                 padding: 5px;
                 padding-bottom: 0px;
                 width: 100%;
-                position: absolute;
+                position: relative;
                 bottom: 0;
             }
         }
 
   </style>
   <title>Responsive Navbar</title>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <nav class="navbar" style="font-size: small;">
     <div class="container d-flex justify-content-between">
       <div>
-        <i class="fa fa-envelope"></i> demo@email.com
+        <i class="fa fa-envelope"></i> mailto:demo@email.com
       </div>
       <div>
         <i class="fa fa-user ct-u-paddingRight5"></i>
-        <script type="text/javascript" src="E-Passport_files/jsf.js.xhtml"></script>
-        <a :hover{color:blue} id="stickyTopBar:submit-login" href="#" onclick="mojarra.jsfcljs(document.getElementById('stickyTopBar'),{'stickyTopBar:submit-login':'stickyTopBar:submit-login'},'');return false" class="topbar-item">Logout</a>
+        <a :hover{color:blue} id="stickyTopBar" href="#" class="topbar-item">Logout</a>
       </div>
     </div>
   </nav>
@@ -70,10 +75,10 @@
     </div>
 </div>
 
-<div class="container" style="background-color: white; border: 1px solid black; margin-top: 10px;">
+<div id="tabular" class="container sticky-top" style="background-color: white; border: 1px solid black; margin-top: 10px;">
     <div class="row">
         <div class="col-md-8 col-sm-6 d-flex align-items-center justify-content-md-start justify-content-center" style="padding: 6px;">
-            <h2 class="mb-0">Renewal Application</h2>
+            <h4 class="mb-0">Renewal Application</h4>
         </div>
         <div class="col-md-2 col-sm-3 text-center border-left border-dark d-flex align-items-center justify-content-md-center justify-content-center" style="padding: 6px;">
             <div class="d-flex flex-column align-items-center">
@@ -90,12 +95,21 @@
     </div>
 </div>
 
+  <div class="container">
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+    <h1>Ali Hamza</h1>
+  </div>
 
-
-
-
-
-  <!-- Add Font Awesome CDN for icons -->
   <footer id="footer" style="background-color: rgb(58, 82, 106);">
     <div class="container text-center">
       <div class="row">
@@ -110,5 +124,32 @@
       </div>
     </div>
   </footer>
+  <script>
+    // JavaScript to toggle the sticky class on scroll
+    const tabularDiv = document.getElementById("tabular");
+    const tabularOffsetTop = tabularDiv.offsetTop;
+
+    function toggleSticky() {
+      if (window.pageYOffset >= tabularOffsetTop) {
+        tabularDiv.classList.add("sticky");
+        tabularDiv.classList.remove("container");
+        tabularDiv.classList.add("container-fluid");
+        tabularDiv.style.backgroundColor = "lightgray";
+        tabularDiv.style.paddingLeft = "60px";
+
+        tabularDiv.style.border = "none";
+        tabularDiv.style.width = "100%";
+      } else {
+        tabularDiv.classList.remove("sticky");
+        tabularDiv.classList.remove("container-fluid");
+        tabularDiv.classList.add("container");
+        tabularDiv.style.backgroundColor = "white";
+        tabularDiv.style.border = "1px solid black";
+        tabularDiv.style.width = "auto";
+      }
+    }
+    // Attach the scroll event listener
+    window.addEventListener("scroll", toggleSticky);
+  </script>
 </body>
 </html>
