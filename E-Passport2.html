@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>E-Passport</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/536e6c8961.js" crossorigin="anonymous"></script>
   <script type="text/javascript" async="" src="E-Passport_files/js"></script>
   <style>
     .navbar-custom {
@@ -49,9 +51,14 @@
       display: flex;
       gap: 1rem;
     }
+
+    .hidden {
+            display: none;
+        }
   </style>
   <script>
-    function togglePersonalInfo() {
+          
+      function togglePersonalInfo() {
       const personalInfoFields = document.getElementById("personalInfoFields");
 
       if (personalInfoFields.style.display === "none") {
@@ -59,6 +66,260 @@
       } else {
         personalInfoFields.style.display = "none";
       }
+    }
+
+    function togglecategorySeats(){
+      const categorySeats=document.getElementById("categorySeats");
+
+      if(categorySeats.style.display ==="none"){
+        categorySeats.style.display = "block";
+      }else{
+        categorySeats.style.display = "none";
+      }
+
+      }
+
+      function toggleQualificationSection() {
+      const qualificationSection = document.getElementById("qualificationSection");
+
+      if (qualificationSection.style.display === "none") {
+        qualificationSection.style.display = "block";
+      } else {
+        qualificationSection.style.display = "none";
+      }
+      }
+
+      function toggleAdmissionTestSection() {
+      const  admissionTestSection = document.getElementById("admissionTest");
+
+      if ( admissionTestSection.style.display === "none") {
+        admissionTestSection.style.display = "block";
+      } else {
+        admissionTestSection.style.display = "none";
+      }
+      }
+
+      function toggleUniversityPreferencesSection() {
+      const  universityPreferences = document.getElementById("universityPreferences");
+
+      if (universityPreferences.style.display === "none") {
+        universityPreferences.style.display = "block";
+      } else {
+        universityPreferences.style.display = "none";
+      }
+      }
+
+      
+
+    function populateNationalityDropdown() {
+    const countries = [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Andorra",
+        "Angola",
+        "Antigua and Barbuda",
+        "Argentina",
+        "Armenia",
+        "Australia",
+        "Austria",
+        "Azerbaijan",
+        "The Bahamas",
+        "Bahrain",
+        "Bangladesh",
+        "Barbados",
+        "Belarus",
+        "Belgium",
+        "Belize",
+        "Benin",
+        "Bhutan",
+        "Bolivia",
+        "Bosnia and Herzegovina",
+        "Botswana",
+        "Brazil",
+        "Brunei",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burundi",
+        "Cabo Verde",
+        "Cambodia",
+        "Cameroon",
+        "Canada",
+        "Central African Republic",
+        "Chad",
+        "Chile",
+        "China",
+        "Colombia",
+        "Comoros",
+        "Congo, Democratic Republic of the",
+        "Congo, Republic of the",
+        "Costa Rica",
+        "Côte d’Ivoire",
+        "Croatia",
+        "Cuba",
+        "Cyprus",
+        "Czech Republic",
+        "Denmark",
+        "Djibouti",
+        "Dominica",
+        "Dominican Republic",
+        "East Timor (Timor-Leste)",
+        "Ecuador",
+        "Egypt",
+        "El Salvador",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Estonia",
+        "Eswatini",
+        "Ethiopia",
+        "Fiji",
+        "Finland",
+        "France",
+        "Gabon",
+        "The Gambia",
+        "Georgia",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "Grenada",
+        "Guatemala",
+        "Guinea",
+        "Guinea-Bissau",
+        "Guyana",
+        "Haiti",
+        "Honduras",
+        "Hungary",
+        "Iceland",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "Jamaica",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kiribati",
+        "Korea, North",
+        "Korea, South",
+        "Kosovo",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Laos",
+        "Latvia",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Madagascar",
+        "Malawi",
+        "Malaysia",
+        "Maldives",
+        "Mali",
+        "Malta",
+        "Marshall Islands",
+        "Mauritania",
+        "Mauritius",
+        "Mexico",
+        "Micronesia, Federated States of",
+        "Moldova",
+        "Monaco",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Mozambique",
+        "Myanmar (Burma)",
+        "Namibia",
+        "Nauru",
+        "Nepal",
+        "Netherlands",
+        "New Zealand",
+        "Nicaragua",
+        "Niger",
+        "Nigeria",
+        "North Macedonia",
+        "Norway",
+        "Oman",
+        "Pakistan",
+        "Palau",
+        "Panama",
+        "Papua New Guinea",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Portugal",
+        "Qatar",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Samoa",
+        "San Marino",
+        "Sao Tome and Principe",
+        "Saudi Arabia",
+        "Senegal",
+        "Serbia",
+        "Seychelles",
+        "Sierra Leone",
+        "Singapore",
+        "Slovakia",
+        "Slovenia",
+        "Solomon Islands",
+        "Somalia",
+        "South Africa",
+        "Spain",
+        "Sri Lanka",
+        "Sudan",
+        "Sudan, South",
+        "Suriname",
+        "Sweden",
+        "Switzerland",
+        "Syria",
+        "Taiwan",
+        "Tajikistan",
+        "Tanzania",
+        "Thailand",
+        "Togo",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Turkmenistan",
+        "Tuvalu",
+        "Uganda",
+        "Ukraine",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uruguay",
+        "Uzbekistan",
+        "Vanuatu",
+        "Vatican City",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zambia",
+        "Zimbabwe",
+      ];
+    
+
+      const nationalityDropdown = document.getElementById("nationality");
+
+      countries.forEach((country) => {
+        const option = document.createElement("option");
+        option.value = country;
+        option.text = country;
+        nationalityDropdown.appendChild(option);
+      });
     }
   </script>
 </head>
@@ -117,7 +378,7 @@
           <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
             &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
               style="padding-top:5px;">
-            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Application Details</span>
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Personal Information</span>
           </div>
           <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
             <i id="collapse1Angle" class="fa fa-angle-down"></i>
@@ -125,7 +386,9 @@
         </div>
       </div>
 
+      <form action="submit">
       <div class="row mt-3" id="personalInfoFields" style="display: none;">
+       
         <div class="col-md-12">
           <div class="form-row">
             <div class="form-group col-md-4">
@@ -175,7 +438,7 @@
           </div>
 
           <label for="nationality">Choose Nationality</label>
-          <select class="form-select mb-3" id="nationality">
+          <select class="form-select mb-3" id="nationality" onClick ="populateNationalityDropdown()" >
             <option selected>Choose Nationality...</option>
           </select>
           <label for="dob">DOB</label>
@@ -196,22 +459,855 @@
           <a href="program&seats.html">
             <button type="submit"
               class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-              Save & Continue
+              Save
             </button></a>
         </div>
       </div>
-
-
-
-
+    </form>
       <div class="row">&nbsp;</div>
       <div class="row">&nbsp;</div>
     </div>
+    <!-- END -->
 
+    <!-- Program Seats & Category Section -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="togglecategorySeats()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
+              style="padding-top:5px;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Program Seats & Category</span>
+          </div>
+          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
+            <i id="collapse1Angle" class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3" id="categorySeats" style="display: none;">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-2 font-weight-bold text-2xl">Category of Seats</h3>
+              <form action="submit">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="openMeritcheckbox"
+                    />
+                    <label class="form-check-label" for="openMeritcheckbox">Open Merit</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="disabilitiescheckbox"
+                    />
+                    <label class="form-check-label" for="disabilitiescheckbox">Students with Disabilities</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="underdevelopedcheckbox"
+                    />
+                    <label class="form-check-label" for="underdevelopedcheckbox">Under-developed Districts</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="cholistancheckbox"
+                    />
+                    <label class="form-check-label" for="cholistancheckbox">Cholistan</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="overseascheckbox"
+                    />
+                    <label class="form-check-label" for="overseascheckbox">Overseas</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="categorySeats"
+                      id="reciprocalcheckbox"
+                    />
+                    <label class="form-check-label" for="reciprocalcheckbox">Reciprocal</label>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6">
+              <h3 class="mb-2 font-weight-bold text-2xl">Choose Program</h3>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  name="chooseProgram"
+                  type="radio"
+                  value=""
+                  id="mbbsradio"
+                />
+                <label class="form-check-label" for="mbbsradio">MBBS</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="chooseProgram"
+                  value=""
+                  id="bdsradio"
+                />
+                <label class="form-check-label" for="bdsradio">BDS</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="chooseProgram"
+                  value=""
+                  id="mbbsbdsradio"
+                />
+                <label class="form-check-label" for="mbbsbdsradio">MBBS & BDS</label>
+              </div>
+            </div>
+          </div>
+        <div class="col text-end">
+          <a href="program&seats.html">
+            <button type="submit"
+              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+              Save
+            </button></a>
+        </div>
+
+      </div>
+    </form>
+      
+    </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+    <!-- END -->
+
+    <!-- Qualifications Section -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="toggleQualificationSection()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
+              style="padding-top:5px;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Qualifications</span>
+          </div>
+          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
+            <i id="collapse1Angle" class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3" id="qualificationSection" style="display: none;">
+        <div class="col-md-12">
+          <div class="row">
+            <h6 class="text-danger fw-bold">
+              *Aggregate marks in HSSC / equivalent must not be less than 60% i.e.
+              660/1100
+            </h6>
+  
+            <!-- Qualifications section with input fields -->
+            <div class="mb-3">
+              <div class="row mb-2">
+                <h4 class="mt-4 mb-3">SSC / 10-Grade / O-Level</h4>
+                <div class="col-md-6">
+                  <label for="examinationPassed">Examination Passed</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="examinationPassed"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="scienceSubjects">Science Subjects</label>
+                  <input type="text" class="form-control" id="scienceSubjects" />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-6">
+                  <label for="institutionType">Institution Type</label>
+                  <input type="text" class="form-control" id="institutionType" />
+                </div>
+                <div class="col-md-6">
+                  <label for="boardUniversity">Board / University</label>
+                  <input type="text" class="form-control" id="boardUniversity" />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-6">
+                  <label for="yearOfPassing" class="mt-0"
+                    >Choose Year Of Passing</label
+                  >
+                  <select class="form-select mb-3" id="yearOfPassing">
+                    <option selected>Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="marksObtained">Marks Obtained</label>
+                  <input type="text" class="form-control" id="marksObtained" />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-6">
+                  <label for="totalMarks">Total Marks</label>
+                  <input type="text" class="form-control" id="totalMarks" />
+                </div>
+                <div class="col-md-6">
+                  <!-- Empty column for layout balance -->
+                </div>
+              </div>
+            </div>
+  
+            <button id="addQualificationBtn" class="btn btn-primary" style="max-width: 290px; margin-left: 10px;" type="submit">
+              Qualifications for Intermediate
+            </button>
+  
+            <h6 class="mt-4 mb-4 text-danger fw-bold">
+              * Intermediate / Equivalent (Subject) scores
+            </h6>
+            <div class="mb-3">
+              <label for="chemistry">Chemistry</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="chemistry"
+                  placeholder="Score"
+                />
+                <span class="input-group-text">/</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="chemistryTotal"
+                  placeholder="Total"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="biology">Biology</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="biology"
+                  placeholder="Score"
+                />
+                <span class="input-group-text">/</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="biologyTotal"
+                  placeholder="Total"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="physicsMath">Physics/Math</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="physicsMath"
+                  placeholder="Score"
+                />
+                <span class="input-group-text">/</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="physicsMathTotal"
+                  placeholder="Total"
+                />
+              </div>
+            </div>
+        <div class="col text-end">
+          <a href="program&seats.html">
+            <button type="submit"
+              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+              Save
+            </button></a>
+        </div>
+
+      </div>
+    </form>
+      
+    </div>
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>  
+      <!-- END -->
+
+      <!-- Admission Test Section -->
+      <div class="container mt-4">
+        <div class="card-header cursor-pointer" onclick="toggleAdmissionTestSection()">
+          <div class="row">
+            <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+              &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
+                style="padding-top:5px;">
+              &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Admission Test</span>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
+              <i id="collapse1Angle" class="fa fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mt-3" id="admissionTest" style="display: none;">
+          <div class="col-md-12">
+            <div class="row">
+              <h6 class="mb-3 fw-bold">Select Test Type:</h6>
+          <select id="testTypeDropdown" class="form-select mb-3" style="max-width: 300px; margin-left: 10px;">
+              <option value="">Select an option</option>
+              <option value="MDCAT">MDCAT</option>
+              <option value="SAT">SAT</option>
+              <option value="UCAT">UCAT</option>
+          </select>
+
+          <!-- ... input fields for MDCAT ... -->
+          <div id="mdcatFields" class="hidden">
+              <h6 class="mb-3 fw-bold">MDCAT Marks</h6>
+              <div class="mb-3">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <input
+                              type="text"
+                              class="form-control"
+                              id="mdcatYearCnic"
+                              placeholder="MDCAT Year-CNIC"
+                          />
+                      </div>
+                      <div class="col-md-4">
+                          <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Centre from where appeared"
+                          />
+                      </div>
+                      <div class="col-md-4">
+                          <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Marks Obtained"
+                          />
+                      </div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="mdcatApplicant" class="mb-3 fw-bold"
+                      >MDCAT Applicant</label
+                  >
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Applicant Name"
+                          />
+                      </div>
+                      <div class="col-md-6">
+                          <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Applicant CNIC"
+                          />
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- ... input fields for SAT ... -->
+          <div id="satFields" class="hidden">
+              <h6 class="mb-3 fw-bold">SAT Marks</h6>
+              <div class="mb-3">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <input
+                              type="text"
+                              class="form-control"
+                              id="satYearCnic"
+                              placeholder="SAT Year-CNIC"
+                          />
+                      </div>
+                      <div class="col-md-4">
+                          <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Centre from where appeared"
+                          />
+                      </div>
+                      <div class="col-md-4">
+                          <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Marks Obtained"
+                          />
+                      </div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="satApplicant" class="mb-3 fw-bold"
+                      >SAT Applicant</label
+                  >
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Applicant Name"
+                          />
+                      </div>
+                      <div class="col-md-6">
+                          <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Applicant CNIC"
+                          />
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- ... input fields for UCAT ... -->
+          <div id="ucatFields" class="hidden">
+            <h6 class="mb-3 fw-bold">UCAT Marks</h6>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="UCATYearCnic"
+                            placeholder="UCAT Year-CNIC"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Centre from where appeared"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Marks Obtained"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="UCATApplicant" class="mb-3 fw-bold"
+                    >UCAT Applicant</label
+                >
+                <div class="row">
+                    <div class="col-md-6">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Applicant Name"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Applicant CNIC"
+                        />
+                    </div>
+                </div>
+            </div>
+          <div class="col text-end">
+            <a href="program&seats.html">
+              <button type="submit"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+                Save
+              </button></a>
+          </div>
+  
+        </div>
+      </form>
+        
+      </div>
+        </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+      </div>
+
+        <!-- END -->
+
+        <div class="container mt-4">
+          <div class="card-header cursor-pointer" onclick="toggleUniversityPreferencesSection()">
+            <div class="row">
+              <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+                &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
+                  style="padding-top:5px;">
+                &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;University Preferences</span>
+              </div>
+              <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
+                <i id="collapse1Angle" class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3" id="universityPreferences" style="display: none;">
+          <div class="col-md-12">
+            <div class="row">
+              <h6 class="text-danger fw-bold">
+                *Here you can add preferences of University according to your
+                likings.
+              </h6>
+              <div class="col" style="padding-top: 10px; padding-bottom: 40px">
+                <!-- Button to Open Modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#textInputModal"
+                >
+                  Add Preferences
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal"
+              id="textInputModal"
+              tabindex="-1"
+              aria-labelledby="textInputModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="textInputModalLabel">
+                      Select Preference
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <select class="form-select" id="preferenceSelect">
+                      <option selected disabled>Select an option</option>
+                    </select>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="cancelPreferenceBtn"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="savePreferenceBtn"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <label for="preferenceDisplay" style="font-size: large"
+              >Selected Preferences</label
+            >
+            <div class="col">
+              <!-- Element to display selected preference -->
+              <div id="preferenceDisplay"></div>
+            </div>
+          </div>
+
+          <div class="col text-end">
+            <a href="program&seats.html">
+              <button type="submit"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+                Save
+              </button></a>
+          </div>
+  
+       
+        </div>
+      </div>
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+    
     <footer style="background-color: #2a2e31; color: white; text-align: center; padding: 10px;">
       © Copyright 2023 Site Developed and Maintained by IT Department, UHS.
     </footer>
+    
+     <!-- University Preferences Section JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const savePreferenceBtn = document.getElementById("savePreferenceBtn");
+      const preferenceSelect = document.getElementById("preferenceSelect");
+      const preferenceDisplay = document.getElementById("preferenceDisplay");
+      // Populate the dropdown options
+      const options = [
+        "Allama Iqbal Medical College",
+        "Quaid-e-Azam Medical College",
+        "Services Institute of Medical Sciences",
+        "Sheikh Zayed Medical College",
+        "Sargodha Medical College",
+        "Nawaz Sharif Medical College",
+        "University of Gujrat Khawaja Muhammad Safdar Medical College",
+        "Sahiwal Medical College",
+        "Sahiwal",
+        "D.G. Khan Medical College",
+        "Ameer-ud-Din Medical College",
+        "Gujranwala Medical College",
+        "Rawalpindi Medical College",
+        "Punjab Medical College",
+        "Nishtar Medical College",
+        "FJMC, Lahore",
+        "KEMC, Lahore",
+      ];
+
+      options.forEach(function (option) {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.textContent = option;
+        preferenceSelect.appendChild(optionElement);
+      });
+
+      savePreferenceBtn.addEventListener("click", function () {
+        const selectedPreference = preferenceSelect.value;
+        if (selectedPreference !== "") {
+          const preferenceContainer =
+            createPreferenceContainer(selectedPreference);
+          preferenceDisplay.appendChild(preferenceContainer);
+        }
+      });
+
+      function createPreferenceContainer(preferenceText) {
+        const preferenceContainer = document.createElement("div");
+        preferenceContainer.classList.add("preference-container");
+
+        const preferenceTextElement = document.createElement("span");
+        preferenceTextElement.textContent = preferenceText;
+
+        const deleteButton = createDeleteButton(preferenceContainer);
+
+        preferenceContainer.appendChild(preferenceTextElement);
+        preferenceContainer.appendChild(deleteButton);
+
+        return preferenceContainer;
+      }
+
+      function createDeleteButton(preferenceContainer) {
+        const deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.classList.add(
+          "btn",
+          "btn-danger",
+          "btn-sm",
+          "delete-button"
+        );
+        deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+
+        deleteButton.addEventListener("click", function () {
+          preferenceContainer.remove();
+        });
+
+        return deleteButton;
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const addPreferenceButton = document.querySelector('[data-bs-target="#textInputModal"]');
+    const cancelPreferenceButton=document.querySelector('#cancelPreferenceBtn');
+    cancelPreferenceButton.addEventListener('click',function(){
+      document.querySelectorAll('.modal-backdrop.show')[0].remove()
+      
+    })
+
+    addPreferenceButton.addEventListener("click", function () {
+      var myModal = new bootstrap.Modal(document.getElementById("textInputModal"));
+      myModal.show();
+    });
+  });
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const addPreferenceButton = document.querySelector('#cancelPreferenceBtn');
+
+  //   addPreferenceButton.addEventListener("click", function () {
+  //     var myModal = new bootstrap.Modal(document.getElementById("#cancelPreferenceBtn"));
+  //     myModal.hide();
+  //   });
+  // });
+
+
+
+  
+</script>
+
+
+    <!-- Js for Qualification section -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const addQualificationBtn = document.getElementById(
+          "addQualificationBtn"
+        );
+        let isFieldsAdded = false;
+
+        addQualificationBtn.addEventListener("click", function () {
+          if (isFieldsAdded) {
+            removeQualificationFields();
+          } else {
+            addQualificationFields();
+          }
+          isFieldsAdded = !isFieldsAdded;
+        });
+
+        function addQualificationFields() {
+          
+          const qualificationsContainer = document.querySelectorAll('.mb-3')[5];
+          const newQualificationFields = `
+                    <div class="row mb-2">
+                        <h4 class="mt-4 mb-3">HSSC / 12-Grade / A-Level </h4>
+                        <div class="col-md-6">
+                            <label for="examinationPassed">Examination Passed</label>
+                            <input type="text" class="form-control" id="examinationPassed">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="scienceSubjects">Science Subjects</label>
+                            <input type="text" class="form-control" id="scienceSubjects">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <label for="institutionType">Institution Type</label>
+                            <input type="text" class="form-control" id="institutionType">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="boardUniversity">College / Board</label>
+                            <input type="text" class="form-control" id="boardUniversity">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <label for="yearOfPassing">Year Of Passing</label>
+                            <input type="text" class="form-control" id="yearOfPassing">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="marksObtained">Marks Obtained</label>
+                            <input type="text" class="form-control" id="marksObtained">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <label for="totalMarks">Total Marks</label>
+                            <input type="text" class="form-control" id="totalMarks">
+                        </div>
+                        <div class="col-md-6">
+                        
+                        </div>
+                    </div>
+                `;
+          const newFieldsContainer = document.createElement("div");
+          newFieldsContainer.innerHTML = newQualificationFields;
+          qualificationsContainer.appendChild(newFieldsContainer);
+        }
+
+        function removeQualificationFields() {
+        const qualificationsContainers = document.querySelectorAll(".mb-3");
+        if (qualificationsContainers.length >= 6) {
+          const qualificationsContainer = qualificationsContainers[5];
+          while (qualificationsContainer.lastChild) {
+            qualificationsContainer.removeChild(qualificationsContainer.lastChild);
+          }
+        }
+      }
+      });
+    </script>
+
+    <!-- Js for Admission Test Section -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const mdcatYearCnicInput = document.getElementById("mdcatYearCnic");
+          const satYearCnicInput = document.getElementById("satYearCnic");
+          const testTypeDropdown = document.getElementById("testTypeDropdown");
+          const mdcatFields = document.getElementById("mdcatFields");
+          const satFields = document.getElementById("satFields");
+          const ucatFields = document.getElementById("ucatFields");
+
+          mdcatYearCnicInput.addEventListener("input", function () {
+              let value = mdcatYearCnicInput.value.replace(/\D/g, "");
+
+              if (value.length > 4) {
+                  value = value.slice(0, 4) + "-" + value.slice(4);
+              }
+
+              mdcatYearCnicInput.value = value;
+          });
+
+          satYearCnicInput.addEventListener("input", function () {
+              let value = satYearCnicInput.value.replace(/\D/g, "");
+
+              if (value.length > 4) {
+                  value = value.slice(0, 4) + "-" + value.slice(4);
+              }
+
+              satYearCnicInput.value = value;
+          });
+
+          testTypeDropdown.addEventListener("change", function () {
+              const selectedOption = testTypeDropdown.value;
+
+              if (selectedOption === "MDCAT") {
+                  mdcatFields.classList.remove("hidden");
+                  satFields.classList.add("hidden");
+                  ucatFields.classList.add("hidden");
+              } else if (selectedOption === "SAT") {
+                  satFields.classList.remove("hidden");
+                  mdcatFields.classList.add("hidden");
+                  ucatFields.classList.add("hidden");
+              } else if (selectedOption === "UCAT") {
+                  ucatFields.classList.remove("hidden");
+                  mdcatFields.classList.add("hidden");
+                  satFields.classList.add("hidden");
+              } else {
+                  mdcatFields.classList.add("hidden");
+                  satFields.classList.add("hidden");
+                  ucatFields.classList.add("hidden");
+              }
+          });
+      });
+  </script>
+
+ 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
