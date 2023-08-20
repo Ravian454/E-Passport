@@ -12,7 +12,6 @@
   <script src="https://kit.fontawesome.com/536e6c8961.js" crossorigin="anonymous"></script>
   <script type="text/javascript" async="" src="E-Passport_files/js"></script>
   <style>
-
     .preference-container {
       margin-bottom: 10px;
     }
@@ -31,6 +30,7 @@
     .delete-button {
       cursor: pointer;
     }
+
     .navbar-custom {
       display: flex;
       justify-content: space-between;
@@ -74,11 +74,11 @@
     }
 
     .hidden {
-            display: none;
-        }
+      display: none;
+    }
 
-        /* Zafar Styles */
-        .wrapper {
+    /* Zafar Styles */
+    .wrapper {
       margin: auto;
       max-width: 550px;
       padding-top: 20px;
@@ -86,76 +86,78 @@
       text-align: center;
     }
 
-.container1 {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-}
+    .container1 {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
 
 
-.upload-container {
-  border-radius: 6px;
-  background-color: rgb(239, 239, 239);
-  padding: 10px;
-}
+    .upload-container {
+      border-radius: 6px;
+      background-color: rgb(239, 239, 239);
+      padding: 10px;
+    }
 
-.border-container {
-  border: 5px dashed rgba(198, 198, 198, 0.65);
+    .border-container {
+      border: 5px dashed rgba(198, 198, 198, 0.65);
 
-  padding: 20px;
-}
+      padding: 20px;
+    }
 
-.border-container p {
-  color: #130f40;
-  font-weight: 600;
-  font-size: 1.1em;
-  letter-spacing: -1px;
-  margin-top: 30px;
-  margin-bottom: 0;
-  opacity: 0.65;
-}
+    .border-container p {
+      color: #130f40;
+      font-weight: 600;
+      font-size: 1.1em;
+      letter-spacing: -1px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      opacity: 0.65;
+    }
 
-#file-browser {
-  text-decoration: none;
-  color: rgb(22,42,255);
-  border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
-}
+    #file-browser {
+      text-decoration: none;
+      color: rgb(22, 42, 255);
+      border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
+    }
 
-#file-browser:hover {
-  color: rgb(0, 0, 255);
-  border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
-}
+    #file-browser:hover {
+      color: rgb(0, 0, 255);
+      border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
+    }
 
-.icons {
-  color: #95afc0;
-  opacity: 0.55;
-}
-     
-      .navbar-custom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    .icons {
+      color: #95afc0;
+      opacity: 0.55;
+    }
 
-      .navbar-search {
-        display: flex;
-        align-items: center;
-      }
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      .navbar-search input {
-        max-width: 200px;
-      }
-      .form-group {
-        display: flex;
-        flex-direction: column;
-      }
+    .navbar-search {
+      display: flex;
+      align-items: center;
+    }
 
-      .form-row {
-        display: flex;
-        gap: 1rem;
-      }
-      .browse-link {
+    .navbar-search input {
+      max-width: 200px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .browse-link {
       color: blue;
       cursor: pointer;
       text-decoration: underline;
@@ -164,12 +166,10 @@
     .hidden-input {
       display: none;
     }
-
-
   </style>
   <script>
-          
-      function togglePersonalInfo() {
+
+    function togglePersonalInfo() {
       const personalInfoFields = document.getElementById("personalInfoFields");
 
       if (personalInfoFields.style.display === "none") {
@@ -179,18 +179,18 @@
       }
     }
 
-    function togglecategorySeats(){
-      const categorySeats=document.getElementById("categorySeats");
+    function togglecategorySeats() {
+      const categorySeats = document.getElementById("categorySeats");
 
-      if(categorySeats.style.display ==="none"){
+      if (categorySeats.style.display === "none") {
         categorySeats.style.display = "block";
-      }else{
+      } else {
         categorySeats.style.display = "none";
       }
 
-      }
+    }
 
-      function toggleQualificationSection() {
+    function toggleQualificationSection() {
       const qualificationSection = document.getElementById("qualificationSection");
 
       if (qualificationSection.style.display === "none") {
@@ -198,39 +198,39 @@
       } else {
         qualificationSection.style.display = "none";
       }
-      }
+    }
 
-      function toggleAdmissionTestSection() {
-      const  admissionTestSection = document.getElementById("admissionTest");
+    function toggleAdmissionTestSection() {
+      const admissionTestSection = document.getElementById("admissionTest");
 
-      if ( admissionTestSection.style.display === "none") {
+      if (admissionTestSection.style.display === "none") {
         admissionTestSection.style.display = "block";
       } else {
         admissionTestSection.style.display = "none";
       }
-      }
+    }
 
-      function toggleUniversityPreferencesSection() {
-      const  universityPreferences = document.getElementById("universityPreferences");
+    function toggleUniversityPreferencesSection() {
+      const universityPreferences = document.getElementById("universityPreferences");
 
       if (universityPreferences.style.display === "none") {
         universityPreferences.style.display = "block";
       } else {
         universityPreferences.style.display = "none";
       }
-      }
+    }
 
-      function toggleDocumentSection() {
+    function toggleDocumentSection() {
       const documentSection = document.getElementById("documentSection");
 
-      if ( documentSection.style.display === "none") {
+      if (documentSection.style.display === "none") {
         documentSection.style.display = "block";
       } else {
         documentSection.style.display = "none";
       }
-      }
+    }
 
-      function toggleAffidavitSection() {
+    function toggleAffidavitSection() {
       const affidavitSection = document.getElementById("affidavitSection");
 
       if (affidavitSection.style.display === "none") {
@@ -238,9 +238,9 @@
       } else {
         affidavitSection.style.display = "none";
       }
-      }
-  
-    
+    }
+
+
   </script>
 </head>
 
@@ -269,55 +269,111 @@
 
     <div class="row">&nbsp;</div>
     <div id="progressContainer" class="progress w-100">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <div class="row">&nbsp;</div>
+
+    <!-- Program Seats & Category Section -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="togglecategorySeats()">
         <div class="row">
-          <div class="row">
-            <div class="progress w-100">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Personal Information
-              </div>
-              <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Program &amp; Seats Category
-              </div>
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Qualifications
-              </div>
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Admission Test
-              </div>
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                University Preferences
-              </div>
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Upload Documents
-              </div>
-              <div class="progress-bar bg-dark" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                Affidavit
-              </div> -->
-            </div>
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="images/group.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Program Seats & Category</span>
           </div>
+
         </div>
       </div>
-        <div class="row">&nbsp;</div>
 
+      <div class="row mt-3" id="categorySeats" style="display: none;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-2 font-weight-bold text-2xl">Category of Seats</h3>
+                <form action="submit">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats" id="openMeritcheckbox" />
+                      <label class="form-check-label" for="openMeritcheckbox">Open Merit</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats" id="disabilitiescheckbox" />
+                      <label class="form-check-label" for="disabilitiescheckbox">Students with Disabilities</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats"
+                        id="underdevelopedcheckbox" />
+                      <label class="form-check-label" for="underdevelopedcheckbox">Under-developed Districts</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats" id="cholistancheckbox" />
+                      <label class="form-check-label" for="cholistancheckbox">Cholistan</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats" id="overseascheckbox" />
+                      <label class="form-check-label" for="overseascheckbox">Overseas</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="categorySeats" id="reciprocalcheckbox" />
+                      <label class="form-check-label" for="reciprocalcheckbox">Reciprocal</label>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                <h3 class="mb-2 font-weight-bold text-2xl">Choose Program</h3>
+                <div class="form-check">
+                  <input class="form-check-input" name="chooseProgram" type="radio" value="" id="mbbsradio" />
+                  <label class="form-check-label" for="mbbsradio">MBBS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="chooseProgram" value="" id="bdsradio" />
+                  <label class="form-check-label" for="bdsradio">BDS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="chooseProgram" value="" id="mbbsbdsradio" />
+                  <label class="form-check-label" for="mbbsbdsradio">MBBS & BDS</label>
+                </div>
+              </div>
+            </div>
+            <div class="col text-end">
+              <button type="button"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
+                Save
+              </button>
+            </div>
+
+          </div>
+          </form>
+
+        </div>
+
+
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+    <!-- END -->
+
+    <!-- Personal Information Section -->
     <div class="container mt-4">
       <div class="card-header cursor-pointer" onclick="togglePersonalInfo()">
         <div class="row">
           <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-              style="padding-top:5px;">
-            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Personal Informtaion</span>
+            &nbsp;&nbsp;&nbsp;<img src="images/resume.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Personal Information</span>
           </div>
-          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-            <i id="collapse1Angle" class="fa fa-angle-down"></i>
-          </div>
+
         </div>
       </div>
-
-    
-       
-        
-        <div  class="row p-3" id="personalInfoFields" style="display: none">
-          <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1300px;">
+      <div class="row p-3" id="personalInfoFields" style="display: none">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1300px;">
           <form action="submit">
             <div class="row">
               <div class="wrapper">
@@ -325,316 +381,195 @@
                   <h3>Upload an Image</h3>
                   <div class="upload-container">
                     <div class="border-container">
-                      
-                      <p>Drag and drop files here, or 
-                        <a href="#" id="file-browser-link">browse</a> your computer.</p>
+                      <img id="uploaded-image" src="" alt="Uploaded Image" style="max-width: 50%; max-height: 50%; display:none;">
+                      <p>Drag and drop files here, or
+                        <a href="#" id="file-browser-link">browse</a> your computer.
+                      </p>
                       <p id="selected-file-name" style="display: none;">Selected File: <span id="file-name"></span>
-                         <i class="fas fa-trash " id="delete-icon"></i></p>
+                        <i class="fas fa-trash" id="delete-icon"></i>
+                      </p>
                     </div>
                     <input type="file" id="file-upload-input" style="display: none;">
                   </div>
                 </div>
               </div>
-              
+
               <script>
-                const fileUploadInput = document.getElementById("file-upload-input");
-                const fileBrowserLink = document.getElementById("file-browser-link");
-                const selectedFileContainer = document.getElementById("selected-file-name");
-                const selectedFileName = document.getElementById("file-name");
-                const deleteIcon = document.getElementById("delete-icon");
-              
-                fileBrowserLink.addEventListener("click", function(event) {
-                  event.preventDefault();
-                  fileUploadInput.click();
-                });
-              
-                deleteIcon.addEventListener("click", function(event) {
-                  selectedFileName.textContent = "";
-                  selectedFileContainer.style.display = "none";
-                  fileUploadInput.value = null; // Reset the file input
-                });
-              
-                fileUploadInput.addEventListener("change", function(event) {
-                  const selectedFile = event.target.files[0];
-                  if (selectedFile) {
-                    selectedFileName.textContent = selectedFile.name;
-                    selectedFileContainer.style.display = "block";
-                  }
-                });
+              const fileUploadInput = document.getElementById("file-upload-input");
+              const fileBrowserLink = document.getElementById("file-browser-link");
+              const selectedFileContainer = document.getElementById("selected-file-name");
+              const selectedFileName = document.getElementById("file-name");
+              const deleteIcon = document.getElementById("delete-icon");
+              const uploadedImage = document.getElementById("uploaded-image"); // Get the uploaded image element
+
+              fileBrowserLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                fileUploadInput.click();
+              });
+
+              deleteIcon.addEventListener("click", function (event) {
+                selectedFileName.textContent = "";
+                selectedFileContainer.style.display = "none";
+                uploadedImage.style.display = "none"; // Hide the uploaded image
+                fileUploadInput.value = null; // Reset the file input
+              });
+
+              fileUploadInput.addEventListener("change", function (event) {
+                const selectedFile = event.target.files[0];
+                if (selectedFile) {
+                  selectedFileName.textContent = selectedFile.name;
+                  selectedFileContainer.style.display = "block";
+                  uploadedImage.style.display = "block"; // Show the uploaded image
+                  uploadedImage.src = URL.createObjectURL(selectedFile); // Set the image source
+                  
+                  // Change the heading text
+                  const heading = document.querySelector(".border-container h3");
+                  heading.textContent = "Uploaded Image";
+
+                }
+              });
+
               </script>
-              
-              
-              
-          </div>
-          <!-- new row -->
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="mb-3 form-group">
-                <label for="hifz" class="form-label">Hifz-e-Quran</label>
-                <div class="form-check" >
-                  <input type="checkbox" class="form-check-input" style="margin-right: 100px; border-color: #454545;" id="hifz">
+            </div>
+            <!-- new row -->
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3 form-group">
+                  <label for="hifz" class="form-label">Hifz-e-Quran</label>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" style="margin-right: 100px; border-color: #454545;"
+                      id="hifz">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>  
-          <div class="row">
-              
-            <div class="col-12 col-md-4">
-              <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-              </div>            
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="mb-3">
-              <label for="fatherName" class="form-label">Father Name</label>
-              <input type="text" class="form-control" id="fatherName" placeholder="Enter your full name">
-            </div></div>
-            <div class="col-12 col-md-4">
-              <div class="mb-3">
-              <label for="motherName" class="form-label">Mother Name</label>
-              <input type="text" class="form-control" id="motherName" placeholder="Enter your full name">
-            </div>
-          </div>
-        </div>
+            <div class="row">
 
-        <!-- 2nd row -->
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="mb-3">
-            <label for="cell" class="form-label">Cell-Number</label>
-            <input type="text" class="form-control" id="cellnumber" placeholder="Enter your full cell number">
-          </div> 
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="mb-3">
-          <label for="tele" class="form-label">Telephone Number</label>
-          <input type="text" class="form-control" id="tellnumber" placeholder="Enter your full name">
-        </div></div>
-        <div class="col-12 col-md-4">
-          <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="text" class="form-control" id="email" placeholder="Enter your full Email">
-        </div>
-      </div>
-    </div>
-    
-      
-
-    <!-- 3rd row -->
-    <div class="row">
-      <div class="col-8">
-        <div class="mb-3">
-          <label for="address" class="form-label">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="Enter your Mailing address">
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="mb-3">
-          <label for="area" class="form-label">Area Of Residence</label>
-          <select id="area" class="form-control" name="">
-            <option>Choose Area Of Residence</option>
-            <option value="male">Rural</option>
-            <option value="female">Urban</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4th row -->
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="mb-3">
-          <label for="dob" class="form-label">Date of Birth</label>
-          <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth">
-        </div> 
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="mb-3 form-group">
-          <label for="my-select" class="form-label">Choose Gender</label>
-          <select id="my-select" class="form-control" name="">
-            <option>Select Gender...</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-4">
-        <div class="mb-3">
-        <label for="domicile" class="form-label">District Of Domicile</label>
-        <input type="text" class="form-control" id="domicile" placeholder="Enter your Domicile District">
-      </div>
-    </div>
-  </div>
-
-  <!-- row 5 -->
-  <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="mb-3">
-        <label for="cinc" class="form-label">CNIC/POC/PASSPORT/B-Form</label>
-        <input type="number" class="form-control" id="cnic" placeholder="Enter CNIC/POC/PASSPORT/B-Form">
-      </div> 
-    </div>
-    <div class="col-12 col-md-4">
-      <div class="mb-3 form-group">
-        <label for="nationality" class="form-label" >Choose Nationality</label>
-        <select id="nationality" class="form-control" name="" onclick="populateNationalityDropdown()">
-          <option>Select Nationality...</option>
-        </select>
-      </div>
-    </div>
-    
-   
-
-    <div class="col text-end">
-      <button type="button"
-        class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
-        style="margin-bottom: 10px;"
-        onclick="updateProgressBar()">
-        Save
-      </button>
-    </div>
-  </div>  
-  </div>
-    </div>
-    <div class="row">&nbsp;</div>
-    <div class="row">&nbsp;</div>
-    </div>
-    <!-- END -->
-
-    <!-- Program Seats & Category Section -->
-    <div class="container mt-4">
-      <div class="card-header cursor-pointer" onclick="togglecategorySeats()">
-        <div class="row">
-          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-              style="padding-top:5px;">
-            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Program Seats & Category</span>
-          </div>
-          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-            <i id="collapse1Angle" class="fa fa-angle-down"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-3" id="categorySeats" style="display: none;">
-        <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-6">
-              <h3 class="mb-2 font-weight-bold text-2xl">Category of Seats</h3>
-              <form action="submit">
-                <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="openMeritcheckbox"
-                    />
-                    <label class="form-check-label" for="openMeritcheckbox">Open Merit</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="disabilitiescheckbox"
-                    />
-                    <label class="form-check-label" for="disabilitiescheckbox">Students with Disabilities</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="underdevelopedcheckbox"
-                    />
-                    <label class="form-check-label" for="underdevelopedcheckbox">Under-developed Districts</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="cholistancheckbox"
-                    />
-                    <label class="form-check-label" for="cholistancheckbox">Cholistan</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="overseascheckbox"
-                    />
-                    <label class="form-check-label" for="overseascheckbox">Overseas</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="categorySeats"
-                      id="reciprocalcheckbox"
-                    />
-                    <label class="form-check-label" for="reciprocalcheckbox">Reciprocal</label>
-                  </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
                 </div>
-            </div>
-            <div class="col-6">
-              <h3 class="mb-2 font-weight-bold text-2xl">Choose Program</h3>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  name="chooseProgram"
-                  type="radio"
-                  value=""
-                  id="mbbsradio"
-                />
-                <label class="form-check-label" for="mbbsradio">MBBS</label>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="chooseProgram"
-                  value=""
-                  id="bdsradio"
-                />
-                <label class="form-check-label" for="bdsradio">BDS</label>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="fatherName" class="form-label">Father Name</label>
+                  <input type="text" class="form-control" id="fatherName" placeholder="Enter your full name">
+                </div>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="chooseProgram"
-                  value=""
-                  id="mbbsbdsradio"
-                />
-                <label class="form-check-label" for="mbbsbdsradio">MBBS & BDS</label>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="motherName" class="form-label">Mother Name</label>
+                  <input type="text" class="form-control" id="motherName" placeholder="Enter your full name">
+                </div>
               </div>
             </div>
-          </div>
-        <div class="col text-end">
-          <a href="program&seats.html">
-            <button type="submit"
-              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-              Save
-            </button></a>
+
+            <!-- 2nd row -->
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="cell" class="form-label">Cell-Number</label>
+                  <input type="text" class="form-control" id="cellnumber" placeholder="Enter your full cell number">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="tele" class="form-label">Telephone Number</label>
+                  <input type="text" class="form-control" id="tellnumber" placeholder="Enter your full name">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" placeholder="Enter your full Email">
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- 3rd row -->
+            <div class="row">
+              <div class="col-8">
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="Enter your Mailing address">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <label for="area" class="form-label">Area Of Residence</label>
+                  <select id="area" class="form-control" name="">
+                    <option>Choose Area Of Residence</option>
+                    <option value="male">Rural</option>
+                    <option value="female">Urban</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4th row -->
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="dob" class="form-label">Date of Birth</label>
+                  <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3 form-group">
+                  <label for="my-select" class="form-label">Choose Gender</label>
+                  <select id="my-select" class="form-control" name="">
+                    <option>Select Gender...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="domicile" class="form-label">District Of Domicile</label>
+                  <input type="text" class="form-control" id="domicile" placeholder="Enter your Domicile District">
+                </div>
+              </div>
+            </div>
+
+            <!-- row 5 -->
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="cinc" class="form-label">CNIC/POC/PASSPORT/B-Form</label>
+                  <input type="number" class="form-control" id="cnic" placeholder="Enter CNIC/POC/PASSPORT/B-Form">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3 form-group">
+                  <label for="nationality" class="form-label">Choose Nationality</label>
+                  <select id="nationality" class="form-control" name="" onclick="populateNationalityDropdown()">
+                    <option>Select Nationality...</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+              <div class="col text-end">
+                <button type="button"
+                  class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                  style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
+                  Save
+                </button>
+              </div>
+
+            </div>
         </div>
-
       </div>
-    </form>
-      
-    </div>
-
-     
-    </div>
-    <div class="row">&nbsp;</div>
       <div class="row">&nbsp;</div>
-    </div>  
+      <div class="row">&nbsp;</div>
+    </div>
     <!-- END -->
 
     <!-- Qualifications Section -->
@@ -642,380 +577,272 @@
       <div class="card-header cursor-pointer" onclick="toggleQualificationSection()">
         <div class="row">
           <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-              style="padding-top:5px;">
+            &nbsp;&nbsp;&nbsp;<img src="images/qualifications.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
             &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Qualifications</span>
           </div>
-          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-            <i id="collapse1Angle" class="fa fa-angle-down"></i>
-          </div>
+
         </div>
       </div>
 
       <div class="row mt-3" id="qualificationSection" style="display: none;">
-        <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
 
-        <div class="col-md-12">
-          <div class="row">
-            <h6 class="text-danger fw-bold">
-              *Aggregate marks in HSSC / equivalent must not be less than 60% i.e.
-              660/1100
-            </h6>
-  
-            <!-- Qualifications section with input fields -->
-            <div class="mb-3">
-              <div class="row mb-2">
-                <h4 class="mt-4 mb-3">SSC / 10-Grade / O-Level</h4>
-                <div class="col-md-6">
-                  <label for="examinationPassed">Examination Passed</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="examinationPassed"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="scienceSubjects">Science Subjects</label>
-                  <input type="text" class="form-control" id="scienceSubjects" />
-                </div>
-              </div>
-              <div class="row mb-2">
-                <div class="col-md-6">
-                  <label for="institutionType">Institution Type</label>
-                  <input type="text" class="form-control" id="institutionType" />
-                </div>
-                <div class="col-md-6">
-                  <label for="boardUniversity">Board / University</label>
-                  <input type="text" class="form-control" id="boardUniversity" />
-                </div>
-              </div>
-              <div class="row mb-2">
-                <div class="col-md-6">
-                  <label for="yearOfPassing" class="mt-0"
-                    >Choose Year Of Passing</label
-                  >
-                  <select class="form-select mb-3" id="yearOfPassing">
-                    <option selected>Year</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label for="marksObtained">Marks Obtained</label>
-                  <input type="text" class="form-control" id="marksObtained" />
-                </div>
-              </div>
-              <div class="row mb-2">
-                <div class="col-md-6">
-                  <label for="totalMarks">Total Marks</label>
-                  <input type="text" class="form-control" id="totalMarks" />
-                </div>
-                <div class="col-md-6">
-                  <!-- Empty column for layout balance -->
-                </div>
-              </div>
-            </div>
-  
-            <button id="addQualificationBtn" class="btn btn-primary" style="max-width: 290px; margin-left: 10px;" type="submit">
-              Qualifications for Intermediate
-            </button>
-  
-            <h6 class="mt-4 mb-4 text-danger fw-bold">
-              * Intermediate / Equivalent (Subject) scores
-            </h6>
-            <div class="mb-3">
-              <label for="chemistry">Chemistry</label>
-              <div class="input-group">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="chemistry"
-                  placeholder="Score"
-                />
-                <span class="input-group-text">/</span>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="chemistryTotal"
-                  placeholder="Total"
-                />
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="biology">Biology</label>
-              <div class="input-group">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="biology"
-                  placeholder="Score"
-                />
-                <span class="input-group-text">/</span>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="biologyTotal"
-                  placeholder="Total"
-                />
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="physicsMath">Physics/Math</label>
-              <div class="input-group">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="physicsMath"
-                  placeholder="Score"
-                />
-                <span class="input-group-text">/</span>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="physicsMathTotal"
-                  placeholder="Total"
-                />
-              </div>
-            </div>
-        <div class="col text-end">
-          <a href="program&seats.html">
-            <button type="submit"
-              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-              Save
-            </button></a>
-        </div>
+          <div class="col-md-12">
+            <div class="row">
+              <h6 class="text-danger fw-bold">
+                *Aggregate marks in HSSC / equivalent must not be less than 60% i.e.
+                660/1100
+              </h6>
 
-      </div>
-    </form>
-      
-    </div>
-      </div>
-      </div>
-      <div class="row">&nbsp;</div>
-      <div class="row">&nbsp;</div>
-    </div>  
-      <!-- END -->
+              <!-- Qualifications section with input fields -->
+              <div class="mb-3">
+                <div class="row mb-2">
+                  <h4 class="mt-4 mb-3">SSC / 10-Grade / O-Level</h4>
+                  <div class="col-md-6">
+                    <label for="examinationPassed">Examination Passed</label>
+                    <input type="text" class="form-control" id="examinationPassed" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="scienceSubjects">Science Subjects</label>
+                    <input type="text" class="form-control" id="scienceSubjects" />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-6">
+                    <label for="institutionType">Institution Type</label>
+                    <input type="text" class="form-control" id="institutionType" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="boardUniversity">Board / University</label>
+                    <input type="text" class="form-control" id="boardUniversity" />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-6">
+                    <label for="yearOfPassing" class="mt-0">Choose Year Of Passing</label>
+                    <select class="form-select mb-3" id="yearOfPassing">
+                      <option selected>Year</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="marksObtained">Marks Obtained</label>
+                    <input type="text" class="form-control" id="marksObtained" />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-6">
+                    <label for="totalMarks">Total Marks</label>
+                    <input type="text" class="form-control" id="totalMarks" />
+                  </div>
+                  <div class="col-md-6">
+                    <!-- Empty column for layout balance -->
+                  </div>
+                </div>
+              </div>
 
-      <!-- Admission Test Section -->
-      <div class="container mt-4">
-        <div class="card-header cursor-pointer" onclick="toggleAdmissionTestSection()">
-          <div class="row">
-            <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-              &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-                style="padding-top:5px;">
-              &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Admission Test</span>
+              <button id="addQualificationBtn" class="btn btn-primary" style="max-width: 290px; margin-left: 10px;"
+                type="submit">
+                Qualifications for Intermediate
+              </button>
+
+              <h6 class="mt-4 mb-4 text-danger fw-bold">
+                * Intermediate / Equivalent (Subject) scores
+              </h6>
+              <div class="mb-3">
+                <label for="chemistry">Chemistry</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="chemistry" placeholder="Score" />
+                  <span class="input-group-text">/</span>
+                  <input type="number" class="form-control" id="chemistryTotal" placeholder="Total" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="biology">Biology</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="biology" placeholder="Score" />
+                  <span class="input-group-text">/</span>
+                  <input type="number" class="form-control" id="biologyTotal" placeholder="Total" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="physicsMath">Physics/Math</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="physicsMath" placeholder="Score" />
+                  <span class="input-group-text">/</span>
+                  <input type="number" class="form-control" id="physicsMathTotal" placeholder="Total" />
+                </div>
+              </div>
+              <div class="col text-end">
+                <button type="button"
+                  class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                  style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
+                  Save
+                </button>
+              </div>
+
             </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-              <i id="collapse1Angle" class="fa fa-angle-down"></i>
-            </div>
+            </form>
+
           </div>
         </div>
-  
-        <div class="row mt-3" id="admissionTest" style="display: none;">
-          <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+    <!-- END -->
+
+    <!-- Admission Test Section -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="toggleAdmissionTestSection()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="images/test.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Admission Test</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-3" id="admissionTest" style="display: none;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
           <div class="col-md-12">
             <div class="row">
               <h6 class="mb-3 fw-bold">Select Test Type:</h6>
-          <select id="testTypeDropdown" class="form-select mb-3" style="max-width: 300px; margin-left: 10px;">
-              <option value="">Select an option</option>
-              <option value="MDCAT">MDCAT</option>
-              <option value="SAT">SAT</option>
-              <option value="UCAT">UCAT</option>
-          </select>
+              <select id="testTypeDropdown" class="form-select mb-3" style="max-width: 300px; margin-left: 10px;">
+                <option value="">Select an option</option>
+                <option value="MDCAT">MDCAT</option>
+                <option value="SAT">SAT</option>
+                <option value="UCAT">UCAT</option>
+              </select>
 
-          <!-- ... input fields for MDCAT ... -->
-          <div id="mdcatFields" class="hidden">
-              <h6 class="mb-3 fw-bold">MDCAT Marks</h6>
-              <div class="mb-3">
+              <!-- ... input fields for MDCAT ... -->
+              <div id="mdcatFields" class="hidden">
+                <h6 class="mb-3 fw-bold">MDCAT Marks</h6>
+                <div class="mb-3">
                   <div class="row">
-                      <div class="col-md-4">
-                          <input
-                              type="text"
-                              class="form-control"
-                              id="mdcatYearCnic"
-                              placeholder="MDCAT Year-CNIC"
-                          />
-                      </div>
-                      <div class="col-md-4">
-                          <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Centre from where appeared"
-                          />
-                      </div>
-                      <div class="col-md-4">
-                          <input
-                              type="number"
-                              class="form-control"
-                              placeholder="Marks Obtained"
-                          />
-                      </div>
-                  </div>
-              </div>
-              <div class="mb-3">
-                  <label for="mdcatApplicant" class="mb-3 fw-bold"
-                      >MDCAT Applicant</label
-                  >
-                  <div class="row">
-                      <div class="col-md-6">
-                          <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Applicant Name"
-                          />
-                      </div>
-                      <div class="col-md-6">
-                          <input
-                              type="number"
-                              class="form-control"
-                              placeholder="Applicant CNIC"
-                          />
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- ... input fields for SAT ... -->
-          <div id="satFields" class="hidden">
-              <h6 class="mb-3 fw-bold">SAT Marks</h6>
-              <div class="mb-3">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <input
-                              type="text"
-                              class="form-control"
-                              id="satYearCnic"
-                              placeholder="SAT Year-CNIC"
-                          />
-                      </div>
-                      <div class="col-md-4">
-                          <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Centre from where appeared"
-                          />
-                      </div>
-                      <div class="col-md-4">
-                          <input
-                              type="number"
-                              class="form-control"
-                              placeholder="Marks Obtained"
-                          />
-                      </div>
-                  </div>
-              </div>
-              <div class="mb-3">
-                  <label for="satApplicant" class="mb-3 fw-bold"
-                      >SAT Applicant</label
-                  >
-                  <div class="row">
-                      <div class="col-md-6">
-                          <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Applicant Name"
-                          />
-                      </div>
-                      <div class="col-md-6">
-                          <input
-                              type="number"
-                              class="form-control"
-                              placeholder="Applicant CNIC"
-                          />
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- ... input fields for UCAT ... -->
-          <div id="ucatFields" class="hidden">
-            <h6 class="mb-3 fw-bold">UCAT Marks</h6>
-            <div class="mb-3">
-                <div class="row">
                     <div class="col-md-4">
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="UCATYearCnic"
-                            placeholder="UCAT Year-CNIC"
-                        />
+                      <input type="text" class="form-control" id="mdcatYearCnic" placeholder="MDCAT Year-CNIC" />
                     </div>
                     <div class="col-md-4">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Centre from where appeared"
-                        />
+                      <input type="text" class="form-control" placeholder="Centre from where appeared" />
                     </div>
                     <div class="col-md-4">
-                        <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Marks Obtained"
-                        />
+                      <input type="number" class="form-control" placeholder="Marks Obtained" />
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label for="UCATApplicant" class="mb-3 fw-bold"
-                    >UCAT Applicant</label
-                >
-                <div class="row">
+                <div class="mb-3">
+                  <label for="mdcatApplicant" class="mb-3 fw-bold">MDCAT Applicant</label>
+                  <div class="row">
                     <div class="col-md-6">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Applicant Name"
-                        />
+                      <input type="text" class="form-control" placeholder="Applicant Name" />
                     </div>
                     <div class="col-md-6">
-                        <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Applicant CNIC"
-                        />
+                      <input type="number" class="form-control" placeholder="Applicant CNIC" />
                     </div>
+                  </div>
                 </div>
-            </div>
-          <div class="col text-end">
-            <a href="program&seats.html">
-              <button type="submit"
-                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-                Save
-              </button></a>
-          </div>
-  
-        </div>
-      </form>
-        
-      </div>
-        </div>
-        </div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">&nbsp;</div>
-      </div>
-
-        <!-- END -->
-
-        <!-- University Preferences -->
-        <div class="container mt-4">
-          <div class="card-header cursor-pointer" onclick="toggleUniversityPreferencesSection()">
-            <div class="row">
-              <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-                &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-                  style="padding-top:5px;">
-                &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;University Preferences</span>
               </div>
-              <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-                <i id="collapse1Angle" class="fa fa-angle-down"></i>
+
+              <!-- ... input fields for SAT ... -->
+              <div id="satFields" class="hidden">
+                <h6 class="mb-3 fw-bold">SAT Marks</h6>
+                <div class="mb-3">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" id="satYearCnic" placeholder="SAT Year-CNIC" />
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" placeholder="Centre from where appeared" />
+                    </div>
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" placeholder="Marks Obtained" />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="satApplicant" class="mb-3 fw-bold">SAT Applicant</label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Applicant Name" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" placeholder="Applicant CNIC" />
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- ... input fields for UCAT ... -->
+              <div id="ucatFields" class="hidden">
+                <h6 class="mb-3 fw-bold">UCAT Marks</h6>
+                <div class="mb-3">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" id="UCATYearCnic" placeholder="UCAT Year-CNIC" />
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" placeholder="Centre from where appeared" />
+                    </div>
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" placeholder="Marks Obtained" />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="UCATApplicant" class="mb-3 fw-bold">UCAT Applicant</label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Applicant Name" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" placeholder="Applicant CNIC" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-end">
+                <button type="button"
+                  class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                  style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
+                  Save
+                </button>
+              </div>
+              </form>
+
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
 
-          <div class="row mt-3" id="universityPreferences" style="display: none;">
-            <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+    <!-- END -->
+
+    <!-- University Preferences -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="toggleUniversityPreferencesSection()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="images/preference.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;University Preferences</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-3" id="universityPreferences" style="display: none;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
           <div class="col-md-12">
             <div class="row">
               <h6 class="text-danger fw-bold">
@@ -1024,35 +851,20 @@
               </h6>
               <div class="col" style="padding-top: 10px; padding-bottom: 40px">
                 <!-- Button to Open Modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#textInputModal"
-                >
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textInputModal">
                   Add Preferences
                 </button>
               </div>
             </div>
-            <div
-              class="modal"
-              id="textInputModal"
-              tabindex="-1"
-              aria-labelledby="textInputModalLabel"
-              aria-hidden="true"
-            >
+            <div class="modal" id="textInputModal" tabindex="-1" aria-labelledby="textInputModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="textInputModalLabel">
                       Select Preference
                     </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <select class="form-select" id="preferenceSelect">
@@ -1060,51 +872,41 @@
                     </select>
                   </div>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      id="cancelPreferenceBtn"
-                      data-bs-dismiss="modal"
-                    >
+                    <button type="button" class="btn btn-secondary" id="cancelPreferenceBtn" data-bs-dismiss="modal">
                       Cancel
                     </button>
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      id="savePreferenceBtn"
-                    >
+                    <button type="button" class="btn btn-primary" id="savePreferenceBtn">
                       Save
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-          <div class="row">
-            <label for="preferenceDisplay" style="font-size: large"
-              >Selected Preferences</label
-            >
-            <div class="col">
-              <!-- Element to display selected preference -->
-              <div id="preferenceDisplay"></div>
+            <div class="row">
+              <label for="preferenceDisplay" style="font-size: large">Selected Preferences</label>
+              <div class="col">
+                <!-- Element to display selected preference -->
+                <div id="preferenceDisplay"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="col text-end">
-            <a href="program&seats.html">
-              <button type="submit"
-                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+            <div class="col text-end">
+              <button type="button"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
                 Save
-              </button></a>
+              </button>
+            </div>
+
+
           </div>
-  
-       
         </div>
       </div>
-      </div>
-        </div>
       <div class="row">&nbsp;</div>
       <div class="row">&nbsp;</div>
+    </div>
     
+
     <!-- END -->
 
     <!-- Document Section -->
@@ -1112,183 +914,206 @@
       <div class="card-header cursor-pointer" onclick="toggleDocumentSection()">
         <div class="row">
           <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-            &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-              style="padding-top:5px;">
+            &nbsp;&nbsp;&nbsp;<img src="images/file.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
             &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Upload Documents</span>
           </div>
-          <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-            <i id="collapse1Angle" class="fa fa-angle-down"></i>
-          </div>
+
         </div>
       </div>
 
-      
+
       <div class="row mt-3" id="documentSection" style="display: none;">
-        <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
-        <div class="container">
-          <!-- Add guidelines with image for uploading documents -->
-          <div class="guidelines-with-image" style="background-color: #f1f3f4;border: 1px solid #dddddd; border-radius: 10px; margin-bottom: 20px; max-width: 650px; margin: 0 auto; display: flex; align-items: center;">
-            <div class="guidelines-content" style=" padding: 10px;">
-              <p>Please follow these guidelines while uploading documents:</p>
-              <ul>
-                <li>Upload only JPEG, JPG, and PNG formats.</li>
-                <li>Ensure that each document is clear and legible.</li>
-                <li>Documents size cannot be more than 25MB</li>
-                <li>Photographs of supporting documents taken <br> from digital camera or mobile phones are also acceptable.</li>
-                <!-- Add more guidelines as needed -->
-              </ul>
-            </div>
-            <div class="image-container" style=" text-align: right; margin-left: 30px;">
-              <img src="E-Passport_files/supported-docs.png" alt="Image Description" style="max-width: 100px; max-height: 100px;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+          <div class="container">
+            <!-- Add guidelines with image for uploading documents -->
+            <div class="guidelines-with-image"
+              style="background-color: #f1f3f4;border: 1px solid #dddddd; border-radius: 10px; margin-bottom: 20px; max-width: 650px; margin: 0 auto; display: flex; align-items: center;">
+              <div class="guidelines-content" style=" padding: 10px;">
+                <p>Please follow these guidelines while uploading documents:</p>
+                <ul>
+                  <li>Upload only JPEG, JPG, and PNG formats.</li>
+                  <li>Ensure that each document is clear and legible.</li>
+                  <li>Documents size cannot be more than 25MB</li>
+                  <li>Photographs of supporting documents taken <br> from digital camera or mobile phones are also
+                    acceptable.</li>
+                  <!-- Add more guidelines as needed -->
+                </ul>
+              </div>
+              <div class="image-container" style=" text-align: right; margin-left: 30px;">
+                <img src="E-Passport_files/supported-docs.png" alt="Image Description"
+                  style="max-width: 100px; max-height: 100px;">
+              </div>
             </div>
           </div>
-        </div>
 
-            
-        <div class="container">
-          <div class="document-list">
-            <!-- Document list will be added here -->
-            <!-- JavaScript will populate this section -->
+
+          <div class="container">
+            <div class="document-list">
+              <!-- Document list will be added here -->
+              <!-- JavaScript will populate this section -->
+            </div>
           </div>
+          <div class="col text-end">
+            <button type="button"
+              class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+              style="margin-bottom: 10px;" onclick="updateProgressBar(15)">
+              Save
+            </button>
+          </div>
+
         </div>
-      <div class="col text-end">
-        <a href="program&seats.html">
-          <button type="submit"
-            class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-            Save
-          </button></a>
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+    </div>
+   
+
+    <!-- END -->
+
+    <!-- Affidavit Section -->
+    <div class="container mt-4">
+      <div class="card-header cursor-pointer" onclick="toggleAffidavitSection()">
+        <div class="row">
+          <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
+            &nbsp;&nbsp;&nbsp;<img src="images/insurance.png" alt="" class="pull-left"
+              style="padding-top:5px;height: 7%;">
+            &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Affidavit</span>
+          </div>
+
+        </div>
       </div>
 
-   
+
+      <div class="row mt-3" id="affidavitSection" style="display: none;">
+        <div class="container"
+          style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
+          <div class="col mt-3">
+            <p>
+              I solemnly affirm that the information contained in this Admission Form, and the documents attached with
+              this form, are complete and accurate. I understand that if any information in this application, or in the
+              documents and certificates that are attached with this application, is not complete or accurate, I shall
+              not be considered for admission, and if somehow admitted, the University shall cancel my admission in
+              accordance with the provisions of the Prospectus. I have gone through the rules and regulations contained
+              in the Prospectus, and I undertake to abide by all conditions. I understand that the Order of Preference
+              for colleges submitted by me in this Admission Form is final and no subsequent change is permissible. I
+              agree that submission of this Admission Form does not confer any right on me in respect of selection for
+              admission, which shall only be granted on merit. I understand and agree that if admitted to MBBS programme
+              being my first preference as given in this Admission Form, I shall be excluded by the University from the
+              selection process for BDS and vice versa.
+            </p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="confirmationCheckbox"
+                style="border-color: #454545;">
+              <label class="form-check-label" for="confirmationCheckbox">
+                I confirm
+              </label>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col">
+              <button id="previewButton" type="button"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
+                Preview All Information Added
+              </button>
+            </div>
+
+            <div class="col text-end">
+              <button type="button"
+                class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
+                style="margin-bottom: 10px;" onclick="updateProgressBar(10)">
+                Save
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
     </div>
   </div>
-    </div>
-  <div class="row">&nbsp;</div>
-  <div class="row">&nbsp;</div>
 
   <!-- END -->
+  
+  <footer style="background-color: #2a2e31; color: white; text-align: center; padding: 10px;">
+    © Copyright 2023 Site Developed and Maintained by IT Department, UHS.
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
 
-  <!-- Affidavit Section -->
-  <div class="container mt-4">
-    <div class="card-header cursor-pointer" onclick="toggleAffidavitSection()">
-      <div class="row">
-        <div class="col-md-11 col-sm-10 col-xs-10 ct-u-paddingLeft10-xs">
-          &nbsp;&nbsp;&nbsp;<img src="E-Passport_files/application_details.png" alt="" class="pull-left"
-            style="padding-top:5px;">
-          &nbsp;<span class="title-detail">&nbsp;&nbsp;&nbsp;Affidavit</span>
-        </div>
-        <div class="col-md-1 col-sm-2 col-xs-2 ct-u-paddingRight10-xs text-right">
-          <i id="collapse1Angle" class="fa fa-angle-down"></i>
-        </div>
-      </div>
-    </div>
+  <script>
+    document.getElementById("previewButton").addEventListener("click", function () {
+      // Initialize jsPDF
+      window.jsPDF = window.jspdf.jsPDF;
+      var doc = new jsPDF();
 
-    
-    <div class="row mt-3" id="affidavitSection" style="display: none;">  
-      <div class="container" style="margin-top: -15px; border: 1px solid #d6e3eb; padding: 10px; border-radius: 5px;max-width: 1280px;">
-      <div class="col text-end">
-        <button
-          id="previewButton"
-          type="button" 
-          class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300"
-        >
-          Preview All Information Added
-        </button>
-      </div>
-    
-    
-      <div class="col text-end">
-      <a href="program&seats.html">
-        <button type="submit"
-          class="btn btn-success border-2 border-green-500 rounded-lg shadow-md transition duration-300">
-          Save
-        </button></a>
-    </div>
+      // Add content to the PDF
+      doc.setFontSize(18);
+      doc.setTextColor(0, 0, 0);
+      var textWidth = doc.getStringUnitWidth("Final Copy") * 18 * 0.3527;
+      var canvasWidth = doc.internal.pageSize.getWidth();
+      doc.text((canvasWidth - textWidth) / 2, 20, "Final Copy");
 
- 
-  </div>
-</div>
-  </div>
-  </div>
-<div class="row">&nbsp;</div>
-<div class="row">&nbsp;</div>
-</div>
-<!-- END -->
-    <footer style="background-color: #2a2e31; color: white; text-align: center; padding: 10px;">
-      © Copyright 2023 Site Developed and Maintained by IT Department, UHS.
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+      var img = new Image();
+      img.src = "images/logo.png";
+      img.onload = function () {
+        var imgWidth = img.width * 0.15; // Adjust the scaling factor as needed
+        var imgHeight = img.height * 0.15; // Adjust the scaling factor as needed
+        var imgX = (canvasWidth - imgWidth) / 2;
+        var imgY = 40;
+        doc.addImage(img, "PNG", imgX, imgY, imgWidth, imgHeight);
 
-    <script>
-     document.getElementById("previewButton").addEventListener("click", function () {
-  // Initialize jsPDF
-  window.jsPDF = window.jspdf.jsPDF;
-  var doc = new jsPDF();
+        doc.setFontSize(14);
+        doc.setTextColor(100, 100, 100);
+        var universityText = "University Of Health Sciences";
+        var universityTextWidth = doc.getStringUnitWidth(universityText) * 14 * 0.3527;
+        var universityTextX = (canvasWidth - universityTextWidth) / 2;
+        var universityTextY = imgY + imgHeight + 10; // Adjust the vertical spacing as needed
+        doc.text(universityTextX, universityTextY, universityText);
 
-  // Add content to the PDF
-  doc.setFontSize(18);
-  doc.setTextColor(0, 0, 0);
-  var textWidth = doc.getStringUnitWidth("Final Copy") * 18 * 0.3527;
-  var canvasWidth = doc.internal.pageSize.getWidth();
-  doc.text((canvasWidth - textWidth) / 2, 20, "Final Copy");
+        var lineY = universityTextY + 10; // Adjust the vertical spacing after the university text
+        doc.setDrawColor(0, 0, 0); // Set line color to black
+        doc.line(0, lineY, canvasWidth, lineY);
 
-  var img = new Image();
-  img.src = "images/logo.png";
-  img.onload = function () {
-    var imgWidth = img.width * 0.15; // Adjust the scaling factor as needed
-    var imgHeight = img.height * 0.15; // Adjust the scaling factor as needed
-    var imgX = (canvasWidth - imgWidth) / 2;
-    var imgY = 40;
-    doc.addImage(img, "PNG", imgX, imgY, imgWidth, imgHeight);
+        // Adding "Program Selected" text
+        // doc.setFontType("bold");
+        doc.setFontSize(14);
+        var programText = "Program Selected";
+        var programTextWidth = doc.getStringUnitWidth(programText) * 14 * 0.3527;
+        var programTextX = (canvasWidth - programTextWidth) / 4;
+        var programTextY = lineY + 20;
+        doc.text(programTextX, programTextY, programText);
 
-    doc.setFontSize(14);
-    doc.setTextColor(100, 100, 100);
-    var universityText = "University Of Health Sciences";
-    var universityTextWidth = doc.getStringUnitWidth(universityText) * 14 * 0.3527;
-    var universityTextX = (canvasWidth - universityTextWidth) / 2;
-    var universityTextY = imgY + imgHeight + 10; // Adjust the vertical spacing as needed
-    doc.text(universityTextX, universityTextY, universityText);
+        // Adding checkboxes
+        var checkboxX = (canvasWidth * 3) / 4;
+        var checkboxY = programTextY - 10;
+        var checkboxSize = 5;
 
-    var lineY = universityTextY + 10; // Adjust the vertical spacing after the university text
-    doc.setDrawColor(0, 0, 0); // Set line color to black
-    doc.line(0, lineY, canvasWidth, lineY);
+        // doc.setFontType("normal");
+        doc.setFontSize(12);
+        doc.text(checkboxX + 10, checkboxY + checkboxSize, "MBBS");
+        doc.text(checkboxX + 10, checkboxY + 2 * checkboxSize + 5, "BDS");
+        doc.text(checkboxX + 10, checkboxY + 3 * checkboxSize + 10, "MBBS & BDS");
 
-    // Adding "Program Selected" text
-    // doc.setFontType("bold");
-    doc.setFontSize(14);
-    var programText = "Program Selected";
-    var programTextWidth = doc.getStringUnitWidth(programText) * 14 * 0.3527;
-    var programTextX = (canvasWidth - programTextWidth) / 4;
-    var programTextY = lineY + 20;
-    doc.text(programTextX, programTextY, programText);
+        // Randomly mark one of the checkboxes
+        var randomIndex = Math.floor(Math.random() * 3); // 0, 1, or 2
+        var selectedCheckboxY = checkboxY + (randomIndex + 1) * (checkboxSize + 5);
+        doc.rect(checkboxX, selectedCheckboxY - checkboxSize, checkboxSize, checkboxSize, "FD");
 
-    // Adding checkboxes
-    var checkboxX = (canvasWidth * 3) / 4;
-    var checkboxY = programTextY - 10;
-    var checkboxSize = 5;
+        // Save the PDF
+        doc.save("preview.pdf");
+      };
+    });
 
-    // doc.setFontType("normal");
-    doc.setFontSize(12);
-    doc.text(checkboxX + 10, checkboxY + checkboxSize, "MBBS");
-    doc.text(checkboxX + 10, checkboxY + 2 * checkboxSize + 5, "BDS");
-    doc.text(checkboxX + 10, checkboxY + 3 * checkboxSize + 10, "MBBS & BDS");
+  </script>
 
-    // Randomly mark one of the checkboxes
-    var randomIndex = Math.floor(Math.random() * 3); // 0, 1, or 2
-    var selectedCheckboxY = checkboxY + (randomIndex + 1) * (checkboxSize + 5);
-    doc.rect(checkboxX, selectedCheckboxY - checkboxSize, checkboxSize, checkboxSize, "FD");
-    
-    // Save the PDF
-    doc.save("preview.pdf");
-  };
-});
+  <script>
 
-    </script>
-
-    <script>
- 
-      function populateNationalityDropdown() {
-    const countries = [
+    function populateNationalityDropdown() {
+      const countries = [
         "Afghanistan",
         "Albania",
         "Algeria",
@@ -1486,7 +1311,7 @@
         "Zambia",
         "Zimbabwe",
       ];
-    
+
 
       const nationalityDropdown = document.getElementById("nationality");
 
@@ -1499,92 +1324,92 @@
     }
 
     window.onload = function () {
-    populateNationalityDropdown();
-  };
-      </script>
-    <!-- Js for Documents Upload Section -->
-    <script>
-      const documentNames = [
-        "Matriculation Result Card",
-        "Intermediate Result Card",
-        "B-Form / CNIC",
-        "Father's CNIC",
-        "Domicile",
-        "Medical Certificate",
-      ];
+      populateNationalityDropdown();
+    };
+  </script>
+  <!-- Js for Documents Upload Section -->
+  <script>
+    const documentNames = [
+      "Matriculation Result Card",
+      "Intermediate Result Card",
+      "B-Form / CNIC",
+      "Father's CNIC",
+      "Domicile",
+      "Medical Certificate",
+    ];
 
-      function createDocumentItem(documentName) {
-        const documentItem = document.createElement("div");
-        documentItem.className =
-          "d-flex justify-content-between align-items-center mb-3";
+    function createDocumentItem(documentName) {
+      const documentItem = document.createElement("div");
+      documentItem.className =
+        "d-flex justify-content-between align-items-center mb-3";
 
-        const documentTitle = document.createElement("span");
-        documentTitle.textContent = documentName;
+      const documentTitle = document.createElement("span");
+      documentTitle.textContent = documentName;
 
-        const uploadedFileNameLabel = document.createElement("span"); // Create a new element to display the uploaded file name
-        uploadedFileNameLabel.className = "uploaded-file-name"; // You can style this element using CSS if needed
+      const uploadedFileNameLabel = document.createElement("span"); // Create a new element to display the uploaded file name
+      uploadedFileNameLabel.className = "uploaded-file-name"; // You can style this element using CSS if needed
 
-        const uploadButton = document.createElement("button");
-        uploadButton.className = "btn btn-primary";
-        uploadButton.textContent = "Upload File";
-        uploadButton.addEventListener("click", () => {
-          const fileInput = document.createElement("input");
-          fileInput.type = "file";
-          fileInput.accept = ".pdf, .doc, .docx, .jpeg, .jpg, .png"; // Define accepted file formats
+      const uploadButton = document.createElement("button");
+      uploadButton.className = "btn btn-primary";
+      uploadButton.textContent = "Upload File";
+      uploadButton.addEventListener("click", () => {
+        const fileInput = document.createElement("input");
+        fileInput.type = "file";
+        fileInput.accept = ".pdf, .doc, .docx, .jpeg, .jpg, .png"; // Define accepted file formats
 
-          fileInput.addEventListener("change", (event) => {
-            const selectedFile = event.target.files[0];
-            if (selectedFile) {
-              const reader = new FileReader();
-              reader.onload = (e) => {
-                // Handle the uploaded file data
-                const fileData = e.target.result;
-                // Display the uploaded file name
-                const uploadedFileName = selectedFile.name;
-                uploadedFileNameLabel.textContent =
-                  "Uploaded: " + uploadedFileName; // Update the content of the new element
-                // You can send the fileData to a server or perform other actions
-              };
-              reader.readAsDataURL(selectedFile);
-            }
-          });
-
-          fileInput.click();
+        fileInput.addEventListener("change", (event) => {
+          const selectedFile = event.target.files[0];
+          if (selectedFile) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              // Handle the uploaded file data
+              const fileData = e.target.result;
+              // Display the uploaded file name
+              const uploadedFileName = selectedFile.name;
+              uploadedFileNameLabel.textContent =
+                "Uploaded: " + uploadedFileName; // Update the content of the new element
+              // You can send the fileData to a server or perform other actions
+            };
+            reader.readAsDataURL(selectedFile);
+          }
         });
 
-        documentItem.appendChild(documentTitle);
-        documentItem.appendChild(uploadedFileNameLabel);
-        documentItem.appendChild(uploadButton);
-        return documentItem;
-      }
-
-      const documentListContainer =
-        document.querySelector(".document-list");
-      documentNames.forEach((documentName) => {
-        const documentItem = createDocumentItem(documentName);
-        documentListContainer.appendChild(documentItem);
+        fileInput.click();
       });
-    </script>
 
-     <!-- University Preferences Section JS -->
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const addPreferenceButton = document.querySelector('[data-bs-target="#textInputModal"]');
-        
-        cancelPreferenceButton.addEventListener('click', function () {
-          var myModal = new bootstrap.Modal(document.getElementById('#cancelPreferenceBtn'));
-          myModal.hide();
-        });
-    
-        addPreferenceButton.addEventListener("click", function () {
-          var myModal = new bootstrap.Modal(document.getElementById("textInputModal"));
-          myModal.show();
-        });
-      });  
-    </script>
+      documentItem.appendChild(documentTitle);
+      documentItem.appendChild(uploadedFileNameLabel);
+      documentItem.appendChild(uploadButton);
+      return documentItem;
+    }
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+    const documentListContainer =
+      document.querySelector(".document-list");
+    documentNames.forEach((documentName) => {
+      const documentItem = createDocumentItem(documentName);
+      documentListContainer.appendChild(documentItem);
+    });
+  </script>
+
+  <!-- University Preferences Section JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const addPreferenceButton = document.querySelector('[data-bs-target="#textInputModal"]');
+
+      cancelPreferenceButton.addEventListener('click', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('#cancelPreferenceBtn'));
+        myModal.hide();
+      });
+
+      addPreferenceButton.addEventListener("click", function () {
+        var myModal = new bootstrap.Modal(document.getElementById("textInputModal"));
+        myModal.show();
+      });
+    });  
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       const savePreferenceBtn = document.getElementById("savePreferenceBtn");
       const preferenceSelect = document.getElementById("preferenceSelect");
       const preferenceDisplay = document.getElementById("preferenceDisplay");
@@ -1626,23 +1451,23 @@
       });
 
       function createPreferenceContainer(preferenceText) {
-      const preferenceContainer = document.createElement("div");
-      preferenceContainer.classList.add("preference-container");
+        const preferenceContainer = document.createElement("div");
+        preferenceContainer.classList.add("preference-container");
 
-      const preferenceLine = document.createElement("div");
-      preferenceLine.classList.add("preference-line");
+        const preferenceLine = document.createElement("div");
+        preferenceLine.classList.add("preference-line");
 
-      const preferenceTextElement = document.createElement("span");
-      preferenceTextElement.textContent = preferenceText;
+        const preferenceTextElement = document.createElement("span");
+        preferenceTextElement.textContent = preferenceText;
 
-      const deleteButton = createDeleteButton(preferenceContainer);
+        const deleteButton = createDeleteButton(preferenceContainer);
 
-      preferenceLine.appendChild(preferenceTextElement);
-      preferenceLine.appendChild(deleteButton);
+        preferenceLine.appendChild(preferenceTextElement);
+        preferenceLine.appendChild(deleteButton);
 
-      preferenceContainer.appendChild(preferenceLine);
+        preferenceContainer.appendChild(preferenceLine);
 
-      return preferenceContainer;
+        return preferenceContainer;
       }
 
 
@@ -1667,27 +1492,27 @@
     });
   </script>
 
-    <!-- Js for Qualification section -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const addQualificationBtn = document.getElementById(
-          "addQualificationBtn"
-        );
-        let isFieldsAdded = false;
+  <!-- Js for Qualification section -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const addQualificationBtn = document.getElementById(
+        "addQualificationBtn"
+      );
+      let isFieldsAdded = false;
 
-        addQualificationBtn.addEventListener("click", function () {
-          if (isFieldsAdded) {
-            removeQualificationFields();
-          } else {
-            addQualificationFields();
-          }
-          isFieldsAdded = !isFieldsAdded;
-        });
+      addQualificationBtn.addEventListener("click", function () {
+        if (isFieldsAdded) {
+          removeQualificationFields();
+        } else {
+          addQualificationFields();
+        }
+        isFieldsAdded = !isFieldsAdded;
+      });
 
-        function addQualificationFields() {
-          
-          const qualificationsContainer = document.querySelectorAll('.mb-3')[5];
-          const newQualificationFields = `
+      function addQualificationFields() {
+
+        const qualificationsContainer = document.querySelectorAll('.mb-3')[5];
+        const newQualificationFields = `
                     <div class="row mb-2">
                         <h4 class="mt-4 mb-3">HSSC / 12-Grade / A-Level </h4>
                         <div class="col-md-6">
@@ -1729,12 +1554,12 @@
                         </div>
                     </div>
                 `;
-          const newFieldsContainer = document.createElement("div");
-          newFieldsContainer.innerHTML = newQualificationFields;
-          qualificationsContainer.appendChild(newFieldsContainer);
-        }
+        const newFieldsContainer = document.createElement("div");
+        newFieldsContainer.innerHTML = newQualificationFields;
+        qualificationsContainer.appendChild(newFieldsContainer);
+      }
 
-        function removeQualificationFields() {
+      function removeQualificationFields() {
         const qualificationsContainers = document.querySelectorAll(".mb-3");
         if (qualificationsContainers.length >= 6) {
           const qualificationsContainer = qualificationsContainers[5];
@@ -1743,76 +1568,90 @@
           }
         }
       }
-      });
-    </script>
-
-    <!-- Js for Admission Test Section -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const mdcatYearCnicInput = document.getElementById("mdcatYearCnic");
-          const satYearCnicInput = document.getElementById("satYearCnic");
-          const testTypeDropdown = document.getElementById("testTypeDropdown");
-          const mdcatFields = document.getElementById("mdcatFields");
-          const satFields = document.getElementById("satFields");
-          const ucatFields = document.getElementById("ucatFields");
-
-          mdcatYearCnicInput.addEventListener("input", function () {
-              let value = mdcatYearCnicInput.value.replace(/\D/g, "");
-
-              if (value.length > 4) {
-                  value = value.slice(0, 4) + "-" + value.slice(4);
-              }
-
-              mdcatYearCnicInput.value = value;
-          });
-
-          satYearCnicInput.addEventListener("input", function () {
-              let value = satYearCnicInput.value.replace(/\D/g, "");
-
-              if (value.length > 4) {
-                  value = value.slice(0, 4) + "-" + value.slice(4);
-              }
-
-              satYearCnicInput.value = value;
-          });
-
-          testTypeDropdown.addEventListener("change", function () {
-              const selectedOption = testTypeDropdown.value;
-
-              if (selectedOption === "MDCAT") {
-                  mdcatFields.classList.remove("hidden");
-                  satFields.classList.add("hidden");
-                  ucatFields.classList.add("hidden");
-              } else if (selectedOption === "SAT") {
-                  satFields.classList.remove("hidden");
-                  mdcatFields.classList.add("hidden");
-                  ucatFields.classList.add("hidden");
-              } else if (selectedOption === "UCAT") {
-                  ucatFields.classList.remove("hidden");
-                  mdcatFields.classList.add("hidden");
-                  satFields.classList.add("hidden");
-              } else {
-                  mdcatFields.classList.add("hidden");
-                  satFields.classList.add("hidden");
-                  ucatFields.classList.add("hidden");
-              }
-          });
-      });
+    });
   </script>
+
+  <!-- Js for Admission Test Section -->
   <script>
-    function updateProgressBar() {
-      const progressContainer = document.getElementById("progressContainer");
-      
-      // Define the completion percentages for each section
-      const completionPercentages = [15, 15, 15, 15, 10, 15, 15];
-      
-      let totalProgress = 0;
-      for (let i = 0; i < completionPercentages.length; i++) {
-        totalProgress += completionPercentages[i];
-        progressContainer.children[i].style.width = totalProgress + "%";
+    document.addEventListener("DOMContentLoaded", function () {
+      const mdcatYearCnicInput = document.getElementById("mdcatYearCnic");
+      const satYearCnicInput = document.getElementById("satYearCnic");
+      const testTypeDropdown = document.getElementById("testTypeDropdown");
+      const mdcatFields = document.getElementById("mdcatFields");
+      const satFields = document.getElementById("satFields");
+      const ucatFields = document.getElementById("ucatFields");
+
+      mdcatYearCnicInput.addEventListener("input", function () {
+        let value = mdcatYearCnicInput.value.replace(/\D/g, "");
+
+        if (value.length > 4) {
+          value = value.slice(0, 4) + "-" + value.slice(4);
+        }
+
+        mdcatYearCnicInput.value = value;
+      });
+
+      satYearCnicInput.addEventListener("input", function () {
+        let value = satYearCnicInput.value.replace(/\D/g, "");
+
+        if (value.length > 4) {
+          value = value.slice(0, 4) + "-" + value.slice(4);
+        }
+
+        satYearCnicInput.value = value;
+      });
+
+      testTypeDropdown.addEventListener("change", function () {
+        const selectedOption = testTypeDropdown.value;
+
+        if (selectedOption === "MDCAT") {
+          mdcatFields.classList.remove("hidden");
+          satFields.classList.add("hidden");
+          ucatFields.classList.add("hidden");
+        } else if (selectedOption === "SAT") {
+          satFields.classList.remove("hidden");
+          mdcatFields.classList.add("hidden");
+          ucatFields.classList.add("hidden");
+        } else if (selectedOption === "UCAT") {
+          ucatFields.classList.remove("hidden");
+          mdcatFields.classList.add("hidden");
+          satFields.classList.add("hidden");
+        } else {
+          mdcatFields.classList.add("hidden");
+          satFields.classList.add("hidden");
+          ucatFields.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+
+
+  <!--Js for Progress Bar-->
+  <script>
+    // Initialize totalProgress to 0
+    let totalProgress = 0;
+
+    function updateProgressBar(percentage) {
+      const progressContainer = document.querySelector("#progressContainer .progress-bar");
+
+      // Update totalProgress
+      totalProgress += percentage;
+
+      // Cap totalProgress at 100
+      if (totalProgress > 100) {
+        totalProgress = 100;
       }
+
+      // Update progress bar width and aria-valuenow
+      progressContainer.style.width = totalProgress + "%";
+      progressContainer.setAttribute("aria-valuenow", totalProgress);
+
+      // Update progress bar text
+      progressContainer.textContent = totalProgress + "%";
     }
   </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
